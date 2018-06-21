@@ -1,0 +1,7 @@
+﻿# No Auto detect text files and perform no LF normalization
+* -text
+
+# Files that should perform LF normalization
+
+# Files that should be treated as binary files
+*.storyboard binary
