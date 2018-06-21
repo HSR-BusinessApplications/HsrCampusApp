@@ -1,0 +1,125 @@
+﻿{
+  "Name": "HSR",
+  "Buildings": [
+    {
+      "Name": "Gebäude 6",
+      "Coordinates": "61,15,153,164",
+      "Floors": [
+        {
+          "Name": "EG",
+          "Id": "537948c3-7604-464f-a255-67a1a4c85420",
+          "Hash": "YhwRPfDUe5ggFlnv42daPg=="
+        },
+        {
+          "Name": "01",
+          "Id": "2f0160a3-7c2a-4291-8417-fe8061c75cb3",
+          "Hash": "1NMI1YRhLd9Xu3eT6bRnTg=="
+        }
+      ],
+      "Id": "2c24a426-3404-448a-9506-0e12d4d862b6",
+      "Hash": "FE43SsCiQvyd6FXb7dWJjA=="
+    },
+    {
+      "Name": "Gebäude 5",
+      "Coordinates": "177,120,294,199",
+      "Floors": [
+        {
+          "Name": "EG",
+          "Id": "d12954de-d3f6-4a41-9b38-06c268477762",
+          "Hash": "5osfszfyNigMZknW7oDJmg=="
+        },
+        {
+          "Name": "01",
+          "Id": "a7cf83a4-3610-4c84-ac80-b1ca781dbd29",
+          "Hash": "nFkKU41qy20iUIBHwtCB8w=="
+        },
+        {
+          "Name": "02",
+          "Id": "3e93de8c-033b-4242-ac87-9daa4dbaf051",
+          "Hash": "4criaE5I7J+uN34XjdzVUg=="
+        }
+      ],
+      "Id": "f5bdb079-c619-4a20-b070-8528f9bef928",
+      "Hash": "d2y/CcMQKs/VroXDaNtP4g=="
+    },
+    {
+      "Name": "Gebäude 4",
+      "Coordinates": "18,224,198,332",
+      "Floors": [
+        {
+          "Name": "EG",
+          "Id": "4a16b107-3264-45c4-836b-e0371fca0d40",
+          "Hash": "SylnVWvXkY4yZ0KPOf/p7A=="
+        },
+        {
+          "Name": "01",
+          "Id": "6f8d8a39-0073-4e79-85b8-9afa2d62a7b9",
+          "Hash": "rqWOmrJ5DfWOwvVHAs1ECA=="
+        }
+      ],
+      "Id": "4c0b0877-92f1-4019-aec4-241ae9ff3928",
+      "Hash": "LElO5+7Id346PJbX9RPweg=="
+    },
+    {
+      "Name": "Gebäude 2",
+      "Coordinates": "341,264,483,431",
+      "Floors": [
+        {
+          "Name": "EG",
+          "Id": "50f5c364-2c85-4282-a179-2bdffcc64a37",
+          "Hash": "yrGEKDpKgbw4EZYAExXBBw=="
+        },
+        {
+          "Name": "01",
+          "Id": "8781c072-5e9e-4482-b4b7-750885a9a8de",
+          "Hash": "5NsXmAPQWRwWqS9tIGJ+Lw=="
+        }
+      ],
+      "Id": "05f9576c-3ab7-461e-99d9-dd5caa1cec5b",
+      "Hash": "HYSXd5ciBf7HGz38a6TMkw=="
+    },
+    {
+      "Name": "Gebäude 3",
+      "Coordinates": "166,432,222,432,223,479,306,480,305,587,166,586",
+      "Floors": [
+        {
+          "Name": "EG",
+          "Id": "e1ea7ead-6157-4c82-9603-889f6d3d3821",
+          "Hash": "Dlcy3D0kXFdZzAo3QvrpKA=="
+        },
+        {
+          "Name": "01",
+          "Id": "b12c01e6-5afb-420f-a246-298ce4dedc44",
+          "Hash": "Q6f1VML1FrzM2wYs3QPNyQ=="
+        }
+      ],
+      "Id": "55972700-2f0e-48fb-8395-c7cf9ce5a78a",
+      "Hash": "V+9OwX/ms0c2JvJmObUbxA=="
+    },
+    {
+      "Name": "Gebäude 1",
+      "Coordinates": "236,230,324,461",
+      "Floors": [
+        {
+          "Name": "EG",
+          "Id": "8a4f6ebd-63bd-4b5d-9abb-c766bd3ac9b8",
+          "Hash": "91RJyuRx5Mu1+VEvNBI3bg=="
+        },
+        {
+          "Name": "01",
+          "Id": "bbebe203-fe4c-40f6-b846-ca557545ff12",
+          "Hash": "jRNGzIry58KvoIJxBoNISQ=="
+        },
+        {
+          "Name": "02",
+          "Id": "8b138dfa-82a9-4443-9ab9-23fc4f29bbfc",
+          "Hash": "c8ny8HKDiPbbylZR9tNqtQ=="
+        }
+      ],
+      "Id": "38f773b6-7266-4a76-b9a3-c73a331e8f66",
+      "Hash": "+4p0/KaAu/ZTwRZBRUJ9JA=="
+    }
+  ],
+  "Id": "19d49c29-37af-4f61-bd28-439437846f2f",
+  "Hash": "8qSWO/3IBcJXs/9lw7A9dg=="
+}

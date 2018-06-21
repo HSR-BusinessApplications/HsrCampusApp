@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActionCancel" xml:space="preserve">
+    <value>Abbrechen</value>
+  </data>
+  <data name="ActionDelete" xml:space="preserve">
+    <value>Löschen</value>
+  </data>
+  <data name="ActionOk" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="AddLiveTile" xml:space="preserve">
+    <value>Live-Kachel hinzufügen</value>
+  </data>
+  <data name="AppBarButtonText" xml:space="preserve">
+    <value>hinzufügen</value>
+  </data>
+  <data name="AppFirstRunMessage" xml:space="preserve">
+    <value>Diese App dient als Ergänzung zu den bestehenden Systemen der HSR. Es besteht keine Garantie auf Korrektheit, Vollständigkeit oder Verfügbarkeit. Die angezeigten Informationen sind nicht Rechtsgültig.</value>
+  </data>
+  <data name="AppFirstRunTitle" xml:space="preserve">
+    <value>Haftungsausschluss</value>
+  </data>
+  <data name="ApplicationTitle" xml:space="preserve">
+    <value>HSR Campus</value>
+  </data>
+  <data name="AppVersion" xml:space="preserve">
+    <value>Echo</value>
+  </data>
+  <data name="AppVersionTitle" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="BadgeTextWindows" xml:space="preserve">
+    <value>Um ihr Kontostand zu aktualisieren, müssen Sie mit dem HSR Netzwerk verbunden sein. Dies ist keine Echtzeitanzeige. 
+
+Es besteht die Möglichkeit, den Kontostand als Live-Kachel hinzuzufügen.</value>
+  </data>
+  <data name="DaySunday" xml:space="preserve">
+    <value>So</value>
+  </data>
+  <data name="DayMonday" xml:space="preserve">
+    <value>Mo</value>
+  </data>
+  <data name="DayTuesday" xml:space="preserve">
+    <value>Di</value>
+  </data>
+  <data name="DayWednesday" xml:space="preserve">
+    <value>Mi</value>
+  </data>
+  <data name="DayThursday" xml:space="preserve">
+    <value>Do</value>
+  </data>
+  <data name="DayFriday" xml:space="preserve">
+    <value>Fr</value>
+  </data>
+  <data name="DaySaturday" xml:space="preserve">
+    <value>Sa</value>
+  </data>
+  <data name="DownloadingError" xml:space="preserve">
+    <value>Fehler beim Herunterladen der Datei: {0}</value>
+  </data>
+  <data name="DownloadingFile" xml:space="preserve">
+    <value>Datei wird heruntergeladen...</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Laden…</value>
+  </data>
+  <data name="LoadingEvents" xml:space="preserve">
+    <value>Lade: Agenda...</value>
+  </data>
+  <data name="LoadingMenus" xml:space="preserve">
+    <value>Lade: Menüs...</value>
+  </data>
+  <data name="LoadingNetwork" xml:space="preserve">
+    <value>Lade: Verzeichnis...</value>
+  </data>
+  <data name="LoadingNews" xml:space="preserve">
+    <value>Lade: Mehr Einträge…</value>
+  </data>
+  <data name="LoadingNewsNew" xml:space="preserve">
+    <value>Lade: Neue Einträge…</value>
+  </data>
+  <data name="LoadingTimetable" xml:space="preserve">
+    <value>Aktualisiere: Stundenplan...</value>
+  </data>
+  <data name="LocationFormat" xml:space="preserve">
+    <value>Ort: </value>
+  </data>
+  <data name="MapBuilding" xml:space="preserve">
+    <value>Gebäude {0}</value>
+  </data>
+  <data name="MapFirstRunMessage" xml:space="preserve">
+    <value>Zoomen und drehen Sie die Karte, um das Bild zu vergrößern. Doppeltippen Sie auf ein Gebäude, um die Etagenpläne zu besichtigen.</value>
+  </data>
+  <data name="MapFirstRunTitle" xml:space="preserve">
+    <value>HSR Campus Karte</value>
+  </data>
+  <data name="MapOverview" xml:space="preserve">
+    <value>Übersicht</value>
+  </data>
+  <data name="MessageCredentials" xml:space="preserve">
+    <value>Bitte Daten überprüfen.</value>
+  </data>
+  <data name="MessageCredentialsDelete" xml:space="preserve">
+    <value>Sind Sie sicher, dass Sie dieses Konto löschen möchten?</value>
+  </data>
+  <data name="Modules" xml:space="preserve">
+    <value>Module</value>
+  </data>
+  <data name="NewsReadMore" xml:space="preserve">
+    <value>mehr »</value>
+  </data>
+  <data name="NoMenus" xml:space="preserve">
+    <value>Derzeit stehen keine Menüs für diesen Ort zur Verfügung.</value>
+  </data>
+  <data name="OpeningError" xml:space="preserve">
+    <value>Folgende Datei konnte nicht geöffnet werden: {0}</value>
+  </data>
+  <data name="OpeningFile" xml:space="preserve">
+    <value>Öffne: Datei...</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Passwort:</value>
+  </data>
+  <data name="ResourceFlowDirection" xml:space="preserve">
+    <value>LeftToRight</value>
+    <comment>Controls the FlowDirection for all elements in the RootFrame. Set to the traditional direction of this resource file's language</comment>
+  </data>
+  <data name="ResourceLanguage" xml:space="preserve">
+    <value>de-CH</value>
+    <comment>Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</comment>
+  </data>
+  <data name="SettingAccountTitle" xml:space="preserve">
+    <value>HSR Konto</value>
+  </data>
+  <data name="SettingAccountTitleSub" xml:space="preserve">
+    <value>Konfiguration und Anwendung</value>
+  </data>
+  <data name="SettingAppInfoTitle" xml:space="preserve">
+    <value>App Info</value>
+  </data>
+  <data name="SettingCacheTitle" xml:space="preserve">
+    <value>Cache leeren</value>
+  </data>
+  <data name="SettingCacheTitleSub" xml:space="preserve">
+    <value>{0} Dateien, {1:0.00} MB</value>
+  </data>
+  <data name="SettingOfficialTitle" xml:space="preserve">
+    <value>Offizielle HSR App</value>
+  </data>
+  <data name="SettingOfficialTitleSub" xml:space="preserve">
+    <value>Für Unterstützung wenden Sie sich an HSR IT-ServiceDesk</value>
+  </data>
+  <data name="SettingStorageTitle" xml:space="preserve">
+    <value>Speicherverwaltung</value>
+  </data>
+  <data name="SettingStorageTitleSub" xml:space="preserve">
+    <value>Cache, Netzwerkdaten</value>
+  </data>
+  <data name="SettingSuccessCacheClear" xml:space="preserve">
+    <value>Cache erfolgreich gelöscht</value>
+  </data>
+  <data name="TileBadge" xml:space="preserve">
+    <value>Badge</value>
+  </data>
+  <data name="TileMenu" xml:space="preserve">
+    <value>Menü</value>
+  </data>
+  <data name="TileCampusMap" xml:space="preserve">
+    <value>Campus Karte</value>
+  </data>
+  <data name="TileExams" xml:space="preserve">
+    <value>Prüfungen</value>
+  </data>
+  <data name="TileLectureNotes" xml:space="preserve">
+    <value>Skripte</value>
+  </data>
+  <data name="TileNews" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="TileSetupAccount" xml:space="preserve">
+    <value>Konto einrichten</value>
+  </data>
+  <data name="TileSport" xml:space="preserve">
+    <value>HSR Sport</value>
+  </data>
+  <data name="TileTimetable" xml:space="preserve">
+    <value>Stundenplan</value>
+  </data>
+  <data name="TileAccount" xml:space="preserve">
+    <value>HSR Konto</value>
+  </data>
+  <data name="UpdateBadgeSaldo" xml:space="preserve">
+    <value>Aktualisiere: Badgestand...</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Benutzername:</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Warnung</value>
+  </data>
+  <data name="BadgeUpdate" xml:space="preserve">
+    <value>Letzte Aktualisierung: {0:dd.MM.yyyy H:mm:ss}</value>
+  </data>
+  <data name="NoTimetable" xml:space="preserve">
+    <value>Kein Stundenplan vorhanden</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Einstellungen</value>
+  </data>
+  <data name="ConnectionFailed" xml:space="preserve">
+    <value>Daten konnten nicht abgerufen werden - bitte überprüfen Sie die Verbindung.</value>
+  </data>
+  <data name="NoNetworkList" xml:space="preserve">
+    <value>Keine Skriptdaten vorhanden</value>
+  </data>
+  <data name="DateTimeRealtiveNow" xml:space="preserve">
+    <value>vor wenigen Sekunden</value>
+  </data>
+  <data name="DateTimeRealtiveSeconds" xml:space="preserve">
+    <value>vor {0:0} Sekunden</value>
+  </data>
+  <data name="DateTimeRelativeDays" xml:space="preserve">
+    <value>{0:g}</value>
+  </data>
+  <data name="DateTimeRelativeHours" xml:space="preserve">
+    <value>vor {0:0} Stunden</value>
+  </data>
+  <data name="DateTimeRelativeMinutes" xml:space="preserve">
+    <value>vor {0:0} Minuten</value>
+  </data>
+  <data name="LastUpdate" xml:space="preserve">
+    <value>Letzte Aktualisierung:</value>
+  </data>
+  <data name="OAuthIdentity" xml:space="preserve">
+    <value>Identität</value>
+  </data>
+  <data name="OAuthNextRefresh" xml:space="preserve">
+    <value>Letzte Refresh (UTC)</value>
+  </data>
+  <data name="OAuthRemove" xml:space="preserve">
+    <value>Konto entfernen</value>
+  </data>
+  <data name="OAuthRemoveConfirm" xml:space="preserve">
+    <value>Durch das Löschen Ihres Kontos werden auch alle persönliche HSR-Daten (Stundenplan, Prüfung, Badge, Skripte Server) von diesem Gerät entfernt.</value>
+  </data>
+  <data name="NoEntries" xml:space="preserve">
+    <value>Keine Einträge</value>
+  </data>
+  <data name="NoData" xml:space="preserve">
+    <value>Keine Daten verfügbar</value>
+  </data>
+  <data name="NoMaps" xml:space="preserve">
+    <value>Keine Karten verfügbar</value>
+  </data>
+  <data name="OAuthPermissions" xml:space="preserve">
+    <value>OAuth Berechtigungen</value>
+  </data>
+  <data name="AccountBalance" xml:space="preserve">
+    <value>CHF {0:00.00}</value>
+  </data>
+  <data name="AccountSetupVerify" xml:space="preserve">
+    <value>Konto bestätigen</value>
+  </data>
+  <data name="MapFirstRunMessageiOS" xml:space="preserve">
+    <value>Doppeltippen Sie auf ein Gebäude, um die Etagenpläne zu besichtigen.</value>
+  </data>
+  <data name="OAuthComplete" xml:space="preserve">
+    <value>Gratuliere!
+
+Dieses Gerät wurde zur Benutzung der HSR Mobile-Services berechtigt.
+
+Sie können ihre Einstellungen unter folgende Adresse verwalten:
+https://mobile.hsr.ch/</value>
+  </data>
+  <data name="OAuthError" xml:space="preserve">
+    <value>Uhh Ohh! Einen Fehler ist bei der Registrierung beim HSR OAuth Server aufgetreten. Error: {0}</value>
+  </data>
+  <data name="OAuthErrorDenied" xml:space="preserve">
+    <value>Zugriff wurde vom OAuth Server verweigert.</value>
+  </data>
+  <data name="OAuthRenew" xml:space="preserve">
+    <value>Die Berechtigung für dieses Gerät wurde entweder widerrufen oder die maxiamle Zeit zwischen zwei Zugriffen ist abgelaufen. Bitte registrieren Sie dieses Gerät erneut.</value>
+  </data>
+  <data name="OAuthSetup" xml:space="preserve">
+    <value>Zur Verbesserung der Sicherheit an der HSR, werden die Mobile-Services mit dem OAuth-Prinzip geschützt.
+Passwörter werden somit nie in diesem App gespeichert.
+
+Ein Browser-Fenster wird eine sichere Verbindung zum HSR OAuth Server herstellen. Sie können sich mit ihrem HSR Account anmelden. Nach der Annahme der Geräteberechtigungen werden Sie zurück zu dieser App umgeleitet.</value>
+  </data>
+  <data name="PivotWeek" xml:space="preserve">
+    <value>Woche {0}</value>
+  </data>
+  <data name="WeekSelect" xml:space="preserve">
+    <value>KW: {0} - SW: {1}</value>
+  </data>
+  <data name="WeekSelection" xml:space="preserve">
+    <value>Woche wählen</value>
+  </data>
+  <data name="BadgeText" xml:space="preserve">
+    <value>Um ihr Kontostand zu aktualisieren, müssen Sie mit dem HSR Netzwerk verbunden sein. Dies ist keine Echtzeitanzeige. </value>
+  </data>
+  <data name="AppStartSupportExpiredMessage" xml:space="preserve">
+    <value>Das Betriebssystem {0} wird nicht mehr unterstützt. Dies ist das letzte Update der CampusApp für {0}. Führen sie ein Betriebssystem-Update durch, damit sie die App richtig verwenden können.</value>
+  </data>
+  <data name="AppStartSupportExpiredTitle" xml:space="preserve">
+    <value>Support abgelaufen</value>
+  </data>
+  <data name="OAuthErrorStateAuthenticated" xml:space="preserve">
+    <value>Der Authentifizierungsvorgang ist abgelaufen.
+Wenn Sie sich neu anmelden wollen müssen Sie zuerst ihr Konto löschen.</value>
+  </data>
+  <data name="OAuthErrorStateUnauthenticated" xml:space="preserve">
+    <value>Der Authentifizierungsvorgang ist abgelaufen.
+Bitte versuchen Sie es nocheinmal.</value>
+  </data>
+  <data name="ActionDone" xml:space="preserve">
+    <value>Fertig</value>
+  </data>
+  <data name="DayDiv" xml:space="preserve">
+    <value>Div</value>
+  </data>
+  <data name="Updating" xml:space="preserve">
+    <value>Aktualisieren...</value>
+  </data>
+  <data name="Never" xml:space="preserve">
+    <value>Noch nie</value>
+  </data>
+  <data name="SettingCacheClearConfirm" xml:space="preserve">
+    <value>Sind Sie sicher, dass Sie den Cache leeren wollen?</value>
+  </data>
+  <data name="ThirdPartyLibraries" xml:space="preserve">
+    <value>Dritthersteller-Bibliotheken</value>
+  </data>
+  <data name="ThirdPartyLibrariesText" xml:space="preserve">
+    <value>Lizenzen für Dritthersteller-Bibliotheken.</value>
+  </data>
+  <data name="SettingAppInfoSubTitle" xml:space="preserve">
+    <value>Versionsinformationen, Lizenzen</value>
+  </data>
+</root>

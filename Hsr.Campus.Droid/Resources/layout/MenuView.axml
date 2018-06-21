@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:local="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+  <MenuFeedViewPager
+    android:id="@+id/tabViewPagerView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="28dp"
+    local:MvxItemTemplate="@layout/menufeedview"
+    local:MvxBind="ItemsSource Items; Visibility Visibility(HasContent)" />
+  <LinearLayout
+    android:id="@+id/lastUpdated"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:gravity="right"
+    android:padding="6dp"
+    android:clickable="false">
+    <TextView
+      android:id="@+id/lastUpdatedText"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:text="@string/LastUpdate"
+      android:layout_marginRight="6dp" />
+    <TextView
+      android:id="@+id/lastUpdatedValue"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      local:MvxBind="Text RelativeDateTime(LastUpdated)"
+      android:text="25.06.2016 12:15:13" />
+  </LinearLayout>
+  <TextView
+    android:id="@+id/empty"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:text="@string/NoEntries"
+    local:MvxBind="Visibility Visibility(ShowNoContent)" />
+  <TextView
+    android:id="@+id/loading"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:text="@string/Loading"
+    local:MvxBind="Visibility Visibility(IsLoading)" />
+  <TextView
+    android:id="@+id/updating"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:text="@string/Updating"
+    local:MvxBind="Visibility Visibility(ShowUpdating)" />
+</RelativeLayout>

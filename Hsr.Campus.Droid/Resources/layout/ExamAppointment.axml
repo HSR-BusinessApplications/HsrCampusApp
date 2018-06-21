@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_margin="2dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        local:MvxBind="Text StartTime, Converter=DateTime, ConverterParameter=D"
+        style="@android:style/TextAppearance.Holo.Medium" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_box_blue"
+        android:padding="5dp"
+        android:layout_margin="2dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:textColor="@android:color/white"
+                local:MvxBind="Text StartTime, Converter=DateTime, ConverterParameter=HH:mm"
+                style="@android:style/TextAppearance.Holo.Small" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text=" - "
+                style="@android:style/TextAppearance.Holo.Small" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                local:MvxBind="Text EndTime, Converter=DateTime, ConverterParameter=HH:mm"
+                style="@android:style/TextAppearance.Holo.Small" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/title"
+            android:textColor="@android:color/white"
+            local:MvxBind="Text CourseName"
+            style="@android:style/TextAppearance.Holo.Small" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/title"
+            android:id="@+id/lecturers"
+            android:textColor="@android:color/white"
+            local:MvxBind="Text Lecturers"
+            style="@android:style/TextAppearance.Holo.Small" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lecturers"
+            android:id="@+id/description"
+            android:textColor="@android:color/white"
+            style="@android:style/TextAppearance.Holo.Small"
+            local:MvxBind="Text Description; Visibility Visibility(Description)"
+            android:textStyle="italic" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/rooms"
+            android:textColor="@android:color/white"
+            local:MvxBind="Text AppointmentRooms"
+            style="@android:style/TextAppearance.Holo.Small" />
+    </RelativeLayout>
+</LinearLayout>

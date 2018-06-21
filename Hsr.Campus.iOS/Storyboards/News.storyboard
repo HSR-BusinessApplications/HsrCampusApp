@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--News Feed View Controller-->
+        <scene sceneID="202">
+            <objects>
+                <tableViewController storyboardIdentifier="NewsFeedViewController" autoresizesArchivedViewToFullSize="NO" id="203" customClass="NewsFeedViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="-1" id="204">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="3fk-Ns-Ttp"/>
+                        <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NewsTextCell" rowHeight="76" id="207" customClass="NewsTextCell">
+                                <rect key="frame" x="0.0" y="28" width="375" height="76"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="207" id="214">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="75.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="209">
+                                            <rect key="frame" x="20" y="12" width="280" height="14"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="280" id="215"/>
+                                                <constraint firstAttribute="height" constant="14" id="216"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="11"/>
+                                            <color key="textColor" red="0.3333333432674408" green="0.3333333432674408" blue="0.3333333432674408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="213">
+                                            <rect key="frame" x="20" y="28" width="280" height="21.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="280" id="217"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="211">
+                                            <rect key="frame" x="20" y="49.5" width="280" height="14.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="280" id="218"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="213" firstAttribute="leading" secondItem="214" secondAttribute="leading" constant="20" id="219"/>
+                                        <constraint firstItem="211" firstAttribute="top" secondItem="213" secondAttribute="bottom" id="220"/>
+                                        <constraint firstItem="211" firstAttribute="leading" secondItem="214" secondAttribute="leading" constant="20" id="221"/>
+                                        <constraint firstItem="209" firstAttribute="top" secondItem="214" secondAttribute="top" constant="12" id="222"/>
+                                        <constraint firstItem="209" firstAttribute="leading" secondItem="214" secondAttribute="leading" constant="20" id="223"/>
+                                        <constraint firstItem="213" firstAttribute="top" secondItem="209" secondAttribute="bottom" constant="2" id="224"/>
+                                    </constraints>
+                                    <viewLayoutGuide key="safeArea" id="Ylc-HK-Uc0"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <viewLayoutGuide key="safeArea" id="lcw-ip-mTA"/>
+                                <connections>
+                                    <outlet property="Date" destination="209" id="208"/>
+                                    <outlet property="MessageText" destination="211" id="210"/>
+                                    <outlet property="TitleLabel" destination="213" id="212"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NewsImageCell" rowHeight="182" id="225" customClass="NewsImageCell">
+                                <rect key="frame" x="0.0" y="104" width="375" height="182"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="225" id="230">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="181.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="227">
+                                            <rect key="frame" x="20" y="12" width="280" height="14"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="14" id="231"/>
+                                                <constraint firstAttribute="width" constant="280" id="232"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="11"/>
+                                            <color key="textColor" red="0.3333333432674408" green="0.3333333432674408" blue="0.3333333432674408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" placeholderIntrinsicWidth="280" placeholderIntrinsicHeight="140" translatesAutoresizingMaskIntoConstraints="NO" id="229">
+                                            <rect key="frame" x="47.5" y="30" width="280" height="140"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="140" id="233"/>
+                                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="280" id="234"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="227" firstAttribute="top" secondItem="230" secondAttribute="top" constant="12" id="235"/>
+                                        <constraint firstItem="227" firstAttribute="leading" secondItem="230" secondAttribute="leading" constant="20" id="236"/>
+                                        <constraint firstItem="229" firstAttribute="top" secondItem="227" secondAttribute="bottom" constant="4" id="237"/>
+                                        <constraint firstItem="229" firstAttribute="centerX" secondItem="230" secondAttribute="centerX" id="238"/>
+                                    </constraints>
+                                    <viewLayoutGuide key="safeArea" id="9Df-GS-z6w"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="Date" destination="227" id="226"/>
+                                    <outlet property="Image" destination="229" id="228"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NewsTitleCell" rowHeight="62" id="239" customClass="NewsTitleCell">
+                                <rect key="frame" x="0.0" y="286" width="375" height="62"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="239" id="244">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="61.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="241">
+                                            <rect key="frame" x="20" y="12" width="280" height="14"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="14" id="245"/>
+                                                <constraint firstAttribute="width" constant="280" id="246"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="11"/>
+                                            <color key="textColor" red="0.3333333432674408" green="0.3333333432674408" blue="0.3333333432674408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="243">
+                                            <rect key="frame" x="20" y="28" width="280" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="280" id="247"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="241" firstAttribute="leading" secondItem="244" secondAttribute="leading" constant="20" id="248"/>
+                                        <constraint firstItem="241" firstAttribute="top" secondItem="244" secondAttribute="top" constant="12" id="249"/>
+                                        <constraint firstItem="243" firstAttribute="leading" secondItem="244" secondAttribute="leading" constant="20" id="250"/>
+                                        <constraint firstItem="243" firstAttribute="top" secondItem="241" secondAttribute="bottom" constant="2" id="251"/>
+                                    </constraints>
+                                    <viewLayoutGuide key="safeArea" id="Bsn-L9-ar2"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="Date" destination="241" id="240"/>
+                                    <outlet property="TitleLabel" destination="243" id="242"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="203" id="205"/>
+                            <outlet property="delegate" destination="203" id="206"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="252" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="905" y="114"/>
+        </scene>
+        <!--News View Controller-->
+        <scene sceneID="253">
+            <objects>
+                <tabBarController storyboardIdentifier="NewsViewController" definesPresentationContext="YES" id="254" customClass="NewsViewController" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="255">
+                        <rect key="frame" x="0.0" y="687" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="RxQ-sL-xSY"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="256" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="215" y="114"/>
+        </scene>
+    </scenes>
+</document>

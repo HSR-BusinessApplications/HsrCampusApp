@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="24.998459"
+   height="24.999998"
+   viewBox="0 0 24.99846 24.999998"
+   id="svg7623"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   inkscape:export-filename="D:\Projekte\CampusApp\Assets\Bilder iOS\TabSport@3x.png"
+   inkscape:export-xdpi="254.11765"
+   inkscape:export-ydpi="254.11765"
+   sodipodi:docname="TabSport.svg">
+  <defs
+     id="defs7625" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="9.9842823"
+     inkscape:cx="7.2362643"
+     inkscape:cy="18.184233"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1137"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7628">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-350.71521,-590.93363)">
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       d="m 363.21687,600.14995 -3.22265,2.24201 1.13931,-3.75162 -3.125,-2.37224 3.91845,-0.0813 1.28989,-3.69872 1.28581,3.69872 3.92252,0.0813 -3.125,2.37224 1.13525,3.75162 z m -6.32325,1.24917 c -4.59798,-1.45263 -5.13102,-6.31103 -5.14323,-8.38216 l 4.17074,0 0,2.40073 c 0,2.18912 0.63476,4.40673 1.68864,6.20523 -0.21972,-0.0692 -0.45574,-0.14242 -0.71615,-0.2238 m 13.61085,-5.98143 0,-2.40073 4.1748,0 c -0.0162,2.07113 -0.55745,6.91325 -5.14729,8.38216 -0.26042,0.0854 -0.49643,0.1587 -0.71615,0.22787 1.05386,-1.80257 1.6927,-4.02018 1.6927,-6.2093 z m -2.64079,7.57648 c 0.51269,-0.1424 1.16373,-0.33772 1.98567,-0.60221 6.66504,-2.13622 5.83089,-10.41666 5.83089,-10.41666 l -5.17577,0 0,-1.04167 -14.58334,0 0,1.04167 -5.1717,0 c 0,0 -0.8423,8.31299 5.83088,10.41666 0.8138,0.25635 1.46484,0.45166 1.97754,0.59408 1.00912,1.22477 2.25017,2.09961 3.61735,2.40071 l 0,7.4585 c -3.53597,0.21566 -6.25,1.51775 -6.25,3.08838 l 14.58333,0 c 0,-1.57063 -2.7181,-2.87272 -6.25,-3.08838 l 0,-7.4585 c 1.35499,-0.3011 2.59603,-1.1678 3.60515,-2.39258"
+       id="path2166-4" />
+  </g>
+</svg>

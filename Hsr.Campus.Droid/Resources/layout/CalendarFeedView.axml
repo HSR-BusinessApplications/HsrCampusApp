@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:local="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:minWidth="25px"
+                android:minHeight="25px">
+  <Mvx.MvxListView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/list"
+    local:MvxBind="ItemsSource Items; LoadMore LoadMoreCommand; ItemClick ShowDetailCommand; Visibility Visibility(HasContent)"
+    local:MvxItemTemplate="@layout/calendarfeedviewitem" />
+  <TextView
+    android:id="@+id/empty"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:text="@string/NoEntries"
+    local:MvxBind="Visibility Visibility(ShowNoContent)" />
+  <TextView
+    android:id="@+id/loading"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:text="@string/Loading"
+    local:MvxBind="Visibility Visibility(IsLoading)" />
+  <TextView
+    android:id="@+id/updating"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:text="@string/Updating"
+    local:MvxBind="Visibility Visibility(ShowUpdating)" />
+</RelativeLayout>

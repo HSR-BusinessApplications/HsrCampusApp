@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout">
+    <TextView
+        android:id="@+id/title"
+        android:layout_marginTop="20dp"
+        android:textSize="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="true"
+        local:MvxBind="Text Balance.Deposit, Converter=StringFormat, ConverterParameter=&quot;CHF {0:00.00}&quot;; Visibility Visibility(HasContent)"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textSize="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="true"
+        android:text="CHF --.--"
+        local:MvxBind="Visibility InvertedVisibility(HasContent)"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/LastUpdate"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            local:MvxBind="Text Balance.LastUpdate, Converter=RelativeDateTime"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BadgeText"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:id="@+id/layout"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dip"
+        android:scrollbarStyle="outsideInset"
+        android:fillViewport="true">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1"
+            android:padding="10dp">
+            <TableRow>
+                <Button
+                    local:MvxBind="Click GoNews"
+                    android:drawableTop="@drawable/ic_act_news"
+                    android:text="@string/TileNews"
+                    style="@style/ButtonHome" />
+                <Button
+                    style="@style/ButtonHome"
+                    local:MvxBind="Click GoMenu"
+                    android:drawableTop="@drawable/ic_act_cafeteria"
+                    android:text="@string/TileMenu"
+                    android:layout_column="1" />
+            </TableRow>
+            <View
+                android:layout_height="20dip"
+                android:background="@android:color/transparent" />
+            <TableRow>
+                <Button
+                    style="@style/ButtonHome"
+                    android:drawableTop="@drawable/ic_act_compass"
+                    local:MvxBind="Click GoMap"
+                    android:text="@string/TileCampusMap" />
+                <Button
+                    local:MvxBind="Click GoAccountBalance; Visibility IsAuth, Converter=Visibility"
+                    style="@style/ButtonHome"
+                    android:drawableTop="@drawable/ic_act_card"
+                    android:text="@string/TileBadge"
+                    android:layout_column="1" />
+                <Button
+                    local:MvxBind="Click GoAccount; Visibility IsAuth, Converter=InvertedVisibility"
+                    style="@style/ButtonHome"
+                    android:drawableTop="@drawable/ic_act_setup"
+                    android:text="@string/TileSetupAccount" />
+            </TableRow>
+            <View
+                android:layout_height="20dip"
+                android:background="@android:color/transparent"
+                local:MvxBind="Visibility IsAuth, Converter=Visibility" />
+            <TableRow>
+                <Button
+                    style="@style/ButtonHome"
+                    local:MvxBind="Click GoAdunis; Visibility IsAuth, Converter=Visibility"
+                    android:drawableTop="@drawable/ic_act_calendar"
+                    android:text="@string/TileTimetable" />
+                <Button
+                    style="@style/ButtonHome"
+                    android:drawableTop="@drawable/ic_act_network"
+                    local:MvxBind="Click GoFiler; Visibility IsAuth, Converter=Visibility"
+                    android:text="@string/TileLectureNotes"
+                    android:layout_column="1" />
+            </TableRow>
+            <View
+                android:layout_height="20dip"
+                android:background="@android:color/transparent" />
+            <TableRow>
+                <Button
+                    style="@style/ButtonHome"
+                    local:MvxBind="Click GoSports"
+                    android:drawableTop="@drawable/ic_act_sport"
+                    android:text="@string/TileSport" />
+                <Button
+                    style="@style/ButtonHome"
+                    android:layout_column="1" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

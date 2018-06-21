@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="589">
+            <objects>
+                <viewController storyboardIdentifier="MenuViewController" id="590" customClass="MenuViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="607">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="602">
+                                <rect key="frame" x="186" y="358" width="42" height="20"/>
+                                <viewLayoutGuide key="safeArea" id="C9h-PQ-l6A"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="606">
+                                <rect key="frame" x="16" y="143" width="382" height="587"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <viewLayoutGuide key="safeArea" id="Hhr-U6-ipv"/>
+                            </webView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="594">
+                                <rect key="frame" x="52" y="101" width="310" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="608"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="Elc-Et-iOL"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="598">
+                                <rect key="frame" x="16" y="26" width="382" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="609"/>
+                                </constraints>
+                            </segmentedControl>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="604">
+                                <rect key="frame" x="186" y="426.5" width="42" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="180" id="610"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="heb-Dw-yoe"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="596">
+                                <rect key="frame" x="16" y="74" width="382" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="611"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="Nvn-wD-wBy"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="592">
+                                <rect key="frame" x="16" y="101" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="612"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="xkr-MZ-r0h"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleShadowColor" red="0.42467421293258667" green="0.42466151714324951" blue="0.42466866970062256" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="600">
+                                <rect key="frame" x="362" y="101" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="613"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="VYs-bK-2A0"/>
+                                <state key="normal" title="&gt;">
+                                    <color key="titleShadowColor" red="0.42467421293258667" green="0.42466151714324951" blue="0.42466866970062256" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fX3-H4-4y0" firstAttribute="bottom" secondItem="606" secondAttribute="bottom" constant="6" id="614"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="606" secondAttribute="trailing" id="616"/>
+                            <constraint firstItem="606" firstAttribute="leading" secondItem="607" secondAttribute="leadingMargin" id="617"/>
+                            <constraint firstItem="606" firstAttribute="top" secondItem="594" secondAttribute="bottom" constant="6" id="618"/>
+                            <constraint firstItem="fX3-H4-4y0" firstAttribute="top" secondItem="598" secondAttribute="top" constant="-6" id="619"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="598" secondAttribute="trailing" id="621"/>
+                            <constraint firstItem="598" firstAttribute="leading" secondItem="607" secondAttribute="leadingMargin" id="622"/>
+                            <constraint firstItem="602" firstAttribute="centerY" secondItem="607" secondAttribute="centerY" id="623"/>
+                            <constraint firstItem="602" firstAttribute="centerX" secondItem="fX3-H4-4y0" secondAttribute="centerX" id="624"/>
+                            <constraint firstItem="604" firstAttribute="centerY" secondItem="606" secondAttribute="centerY" id="625"/>
+                            <constraint firstItem="606" firstAttribute="centerX" secondItem="604" secondAttribute="centerX" id="626"/>
+                            <constraint firstItem="598" firstAttribute="bottom" secondItem="596" secondAttribute="top" constant="-12" id="627"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="596" secondAttribute="trailing" id="628"/>
+                            <constraint firstItem="596" firstAttribute="leading" secondItem="607" secondAttribute="leadingMargin" id="629"/>
+                            <constraint firstItem="594" firstAttribute="top" secondItem="596" secondAttribute="bottom" constant="6" id="630"/>
+                            <constraint firstItem="592" firstAttribute="top" secondItem="594" secondAttribute="top" id="631"/>
+                            <constraint firstItem="594" firstAttribute="bottom" secondItem="592" secondAttribute="bottom" id="632"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="592" secondAttribute="leading" id="633"/>
+                            <constraint firstItem="592" firstAttribute="trailing" secondItem="594" secondAttribute="leading" id="634"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="600" secondAttribute="trailing" id="635"/>
+                            <constraint firstItem="600" firstAttribute="bottom" secondItem="594" secondAttribute="bottom" id="636"/>
+                            <constraint firstItem="600" firstAttribute="top" secondItem="594" secondAttribute="top" id="637"/>
+                            <constraint firstItem="594" firstAttribute="trailing" secondItem="600" secondAttribute="leading" id="638"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fX3-H4-4y0"/>
+                    </view>
+                    <connections>
+                        <outlet property="Backward" destination="592" id="591"/>
+                        <outlet property="DateInput" destination="594" id="593"/>
+                        <outlet property="FeedName" destination="596" id="595"/>
+                        <outlet property="FeedSelection" destination="598" id="597"/>
+                        <outlet property="Forward" destination="600" id="599"/>
+                        <outlet property="NoContent" destination="602" id="601"/>
+                        <outlet property="NoMenu" destination="604" id="603"/>
+                        <outlet property="WebView" destination="606" id="605"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="639" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1191" y="-566"/>
+        </scene>
+    </scenes>
+</document>

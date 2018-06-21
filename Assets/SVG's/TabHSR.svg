@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="25.000008"
+   height="25"
+   viewBox="0 0 25.000008 25"
+   id="svg3488"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="TabHSR.svg"
+   inkscape:export-filename="D:\Projekte\CampusApp\Assets\Bilder\TabHSR@3x.png"
+   inkscape:export-xdpi="67.5"
+   inkscape:export-ydpi="67.5">
+  <defs
+     id="defs3490" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="0"
+     inkscape:zoom="26.224579"
+     inkscape:cx="5.9151871"
+     inkscape:cy="19.685874"
+     inkscape:document-units="px"
+     inkscape:current-layer="svg3488"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1137"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata3493">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:0"
+     d="m 4.9999999e-6,4.9999999e-6 0,24.9999900000001 24.9999980000001,0 0,-24.9999900000001 -24.9999980000001,0 z M 13.237004,14.128875 c 0.634564,0 1.227562,0.087 1.768874,0.2655 l -0.138473,1.21765 c -0.466262,-0.20198 -0.985924,-0.31738 -1.504898,-0.31738 -0.506919,0 -1.163864,0.22327 -1.163864,1.02501 0,1.28302 3.241348,0.74229 3.241348,3.22151 0,1.62098 -1.283564,2.23503 -2.775955,2.23503 -0.8047,0 -1.163838,-0.10522 -1.895141,-0.28457 l 0.138092,-1.33591 c 0.508041,0.27633 1.090124,0.45548 1.672744,0.45548 0.561405,0 1.313782,-0.28491 1.313782,-0.95139 0,-1.40972 -3.240204,-0.82569 -3.240204,-3.27377 0,-1.65307 1.281235,-2.25716 2.583695,-2.25716 z m -11.2560269,0.12779 1.4831542,0 0,2.98767 2.9666898,0 0,-2.98767 1.4831542,0 0,7.39441 -1.4831542,0 0,-3.24249 -2.9666898,0 0,3.24249 -1.4831542,0 0,-7.39441 z m 15.9442889,0 1.597977,0 c 1.589602,0 3.486633,-0.0536 3.486633,2.00157 0,0.86959 -0.583642,1.58971 -1.524734,1.71624 l 0,0.021 c 0.402084,0.03 0.634982,0.43624 0.782012,0.76103 l 1.18866,2.89459 -1.653289,0 -0.889207,-2.3098 c -0.211678,-0.55171 -0.403129,-0.76179 -1.028061,-0.76179 l -0.477218,0 0,3.07159 -1.482773,0 0,-7.39441 z m 1.482773,1.16539 0,1.99127 0.488281,0 c 0.730123,0 1.565552,-0.10765 1.565552,-1.02729 0,-0.89175 -0.824083,-0.96398 -1.565552,-0.96398 l -0.488281,0 z"
+     id="rect3520"
+     inkscape:export-filename="D:\Projekte\CampusApp\Assets\Bilder iOS\TabHSR@2x.png"
+     inkscape:export-xdpi="45"
+     inkscape:export-ydpi="45"
+     inkscape:connector-curvature="0" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(9.0234374e-6,-103.00001)" />
+</svg>

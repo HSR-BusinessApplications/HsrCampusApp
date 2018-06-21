@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="ApplicationName">Hsr.Campus.Droid</string>
+  <string name="library_name">ModernHttpClient</string>
+  <string name="account_type_name">HSR</string>
+</resources>

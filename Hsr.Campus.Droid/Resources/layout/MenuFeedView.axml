@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:local="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+  <MenuWebViewPager
+    android:id="@+id/menuWebViewPager"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    local:MvxItemTemplate="@layout/menuwebview"
+    local:MvxBind="ItemsSource Items; Visibility Visibility(HasContent)">
+    <android.support.v4.view.PagerTabStrip
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="top"
+      android:paddingBottom="10dp"
+      android:paddingTop="10dp" />
+  </MenuWebViewPager>
+  <TextView
+    android:id="@+id/empty"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:text="@string/NoMenus"
+    local:MvxBind="Visibility Visibility(ShowNoContent)" />
+  <TextView
+    android:id="@+id/loading"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:text="@string/Loading"
+    local:MvxBind="Visibility Visibility(IsLoading)" />
+  <TextView
+    android:id="@+id/updating"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:text="@string/Updating"
+    local:MvxBind="Visibility Visibility(ShowUpdating)" />
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/trans_select"
+    android:padding="8dp"
+    android:scrollbars="none">
+    <TextView
+        android:id="@+id/title"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_io_folder"
+        android:drawablePadding="5dp"
+        android:ellipsize="middle"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/more_info"
+        android:gravity="left|center_vertical"
+        android:singleLine="true"
+        local:MvxBind="Text Name; DrawableLeft IsDirectory, Converter=FileIcon" />
+    <ImageView
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:id="@+id/more_info"
+        android:background="@drawable/border_left"
+        android:src="@drawable/ic_act_info"
+        android:contentDescription="@android:string/untitled"
+        local:MvxBind="Visibility Visibility(IsDirectory);" />
+</RelativeLayout>

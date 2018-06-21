@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="hsr_blue">#ff0068a6</color>
+  <color name="light_grey">#ffefefef</color>
+  <color name="canvas">#FF404040</color>
+  <color name="bar">#C0202020</color>
+  <color name="red">#FF0000</color>
+</resources>

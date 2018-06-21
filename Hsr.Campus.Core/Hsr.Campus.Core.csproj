@@ -1,0 +1,79 @@
+<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <FileUpgradeFlags>0</FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Company>Hochschule für Technik Rapperswil</Company>
+    <Authors />
+    <AssemblyVersion>2.12.0.0</AssemblyVersion>
+    <FileVersion>2.12.2017.0608</FileVersion>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Copyright>Copyright © HSR 2018</Copyright>
+    <PackageProjectUrl>https://campusapp.hsr.ch/index.php?id=16748</PackageProjectUrl>
+    <PackageLicenseUrl>https://campusapp.hsr.ch/index.php?id=16746</PackageLicenseUrl>
+    <Description />
+    <Version>2.12.2018.0608-Release</Version>
+    <ApplicationIcon />
+    <Win32Resource />
+    <CodeAnalysisRuleSet>..\CodeAnalysis_itba_v2.ruleset</CodeAnalysisRuleSet>
+    <Configurations>Debug;Release;Test</Configurations>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard2.0\Hsr.Campus.Core.xml</DocumentationFile>
+    <NoWarn>1701;1702;1705;NU1701</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard2.0\Hsr.Campus.Core.xml</DocumentationFile>
+    <NoWarn>1701;1702;1705;NU1701</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard2.0\Hsr.Campus.Core.xml</DocumentationFile>
+    <DefineConstants>TRACE;DEBUG;TEST_DATA;NETSTANDARD2_0</DefineConstants>
+    <NoWarn>1701;1702;1705;NU1701</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="modernhttpclient-updated" Version="2.6.0" />
+    <PackageReference Include="MvvmCross" Version="5.6.3">
+      <NoWarn>NU1701</NoWarn>
+    </PackageReference>
+    <PackageReference Include="MvvmCross.Plugin.WebBrowser" Version="5.6.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.4.118" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.0.2" />
+    <PackageReference Include="Xam.Plugins.Settings" Version="3.1.1" />
+    <AdditionalFiles Include="stylecop.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\CampusAppKeys\ServiceApi.cs" Link="ApplicationServices\ServiceApi.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Resources\AppResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Licenses.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Licenses.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\AppResources.de.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Licenses.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Licenses.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

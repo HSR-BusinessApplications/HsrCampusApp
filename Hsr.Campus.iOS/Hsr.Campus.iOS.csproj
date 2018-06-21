@@ -1,0 +1,722 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{3C0625B9-9E45-48D4-BAFF-216A42789E3B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Hsr.Campus.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkIdentifier>Xamarin.iOS</TargetFrameworkIdentifier>
+    <AssemblyName>HsrCampusiOS</AssemblyName>
+    <ReleaseVersion>2.9.2017.0807</ReleaseVersion>
+    <SynchReleaseVersion>false</SynchReleaseVersion>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;__UNIFIED__;__MOBILE__;__IOS__;TEST</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchArch>i386, x86_64</MtouchArch>
+    <MtouchOptimizePNGs>True</MtouchOptimizePNGs>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchEnableGenericValueTypeSharing>False</MtouchEnableGenericValueTypeSharing>
+    <NoWarn>1591</NoWarn>
+    <DocumentationFile>bin\iPhoneSimulator\Debug\HsrCampusiOS.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>..\CodeAnalysis_itba_v2.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <NoWarn>1591</NoWarn>
+    <DocumentationFile>bin\iPhoneSimulator\Release\HsrCampusiOS.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>..\CodeAnalysis_itba_v2.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchArch>ARMv7</MtouchArch>
+    <NoWarn>1591</NoWarn>
+    <DocumentationFile>bin\iPhone\Debug\HsrCampusiOS.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>..\CodeAnalysis_itba_v2.ruleset</CodeAnalysisRuleSet>
+    <CodesignProvision>Campusapp Dev</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>
+    </DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer: Christian Koella (6U653SN7EV)</CodesignKey>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <NoWarn>1591</NoWarn>
+    <DocumentationFile>bin\iPhone\Release\HsrCampusiOS.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>..\CodeAnalysis_itba_v2.ruleset</CodeAnalysisRuleSet>
+    <BuildIpa>true</BuildIpa>
+    <CodesignProvision>Campusapp Dev</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
+    <AppExtensionDebugBundleId />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ModernHttpClient, Version=1.0.6603.17853, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\modernhttpclient-updated.2.6.0\lib\Xamarin.iOS10\ModernHttpClient.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Binding, Version=5.6.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmCross.Binding.5.6.3\lib\Xamarin.iOS10\MvvmCross.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Binding.iOS, Version=5.6.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmCross.Binding.5.6.3\lib\Xamarin.iOS10\MvvmCross.Binding.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Core, Version=5.6.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmCross.Core.5.6.3\lib\Xamarin.iOS10\MvvmCross.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.iOS, Version=5.6.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmCross.Core.5.6.3\lib\Xamarin.iOS10\MvvmCross.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Localization, Version=5.6.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmCross.Binding.5.6.3\lib\Xamarin.iOS10\MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Platform, Version=5.6.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmCross.Platform.5.6.3\lib\Xamarin.iOS10\MvvmCross.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Platform.iOS, Version=5.6.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmCross.Platform.5.6.3\lib\Xamarin.iOS10\MvvmCross.Platform.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache">
+      <HintPath>..\packages\MvvmCross.Plugin.DownloadCache.5.6.3\lib\Xamarin.iOS10\MvvmCross.Plugins.DownloadCache.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.DownloadCache.5.6.3\lib\Xamarin.iOS10\MvvmCross.Plugins.DownloadCache.iOS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File">
+      <HintPath>..\packages\MvvmCross.Plugin.File.5.6.3\lib\Xamarin.iOS10\MvvmCross.Plugins.File.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.File.5.6.3\lib\Xamarin.iOS10\MvvmCross.Plugins.File.iOS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Json">
+      <HintPath>..\packages\MvvmCross.Plugin.Json.5.6.3\lib\Xamarin.iOS10\MvvmCross.Plugins.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.MethodBinding">
+      <HintPath>..\packages\MvvmCross.Plugin.MethodBinding.5.6.3\lib\Xamarin.iOS10\MvvmCross.Plugins.MethodBinding.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Visibility">
+      <HintPath>..\packages\MvvmCross.Plugin.Visibility.5.6.3\lib\Xamarin.iOS10\MvvmCross.Plugins.Visibility.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Visibility.iOS">
+      <HintPath>..\packages\MvvmCross.Plugin.Visibility.5.6.3\lib\Xamarin.iOS10\MvvmCross.Plugins.Visibility.iOS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.WebBrowser, Version=5.6.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmCross.Plugin.WebBrowser.5.6.3\lib\Xamarin.iOS10\MvvmCross.Plugins.WebBrowser.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.WebBrowser.iOS, Version=5.6.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmCross.Plugin.WebBrowser.5.6.3\lib\Xamarin.iOS10\MvvmCross.Plugins.WebBrowser.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\netstandard1.3\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Plugin.Settings, Version=3.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xam.Plugins.Settings.3.1.1\lib\Xamarin.iOS10\Plugin.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Settings.Abstractions, Version=3.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xam.Plugins.Settings.3.1.1\lib\Xamarin.iOS10\Plugin.Settings.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\sqlite-net-pcl.1.4.118\lib\netstandard1.1\SQLite-net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLitePCL.batteries, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCL.bundle_green.0.9.3\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCL.batteries.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLitePCL.raw, Version=0.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCL.raw.0.9.3\lib\Xamarin.iOS10\SQLitePCL.raw.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_green, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a84b7dcfb1391f7f, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.8\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_green.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8226ea5df37bcae9, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.8\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1488e028ca7ab535, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.core.1.1.8\lib\Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.provider.sqlite3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=62684c7b4f184e3f, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.provider.sqlite3.ios_unified.1.1.8\lib\Xamarin.iOS10\SQLitePCLRaw.provider.sqlite3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Collections.Immutable, Version=1.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.4.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\IO\_blank.png" />
+    <BundleResource Include="Resources\IO\_folder.png" />
+    <BundleResource Include="Resources\IO\_page.png" />
+    <BundleResource Include="Resources\IO\aac.png" />
+    <BundleResource Include="Resources\IO\ai.png" />
+    <BundleResource Include="Resources\IO\aiff.png" />
+    <BundleResource Include="Resources\IO\avi.png" />
+    <BundleResource Include="Resources\IO\bmp.png" />
+    <BundleResource Include="Resources\IO\c.png" />
+    <BundleResource Include="Resources\IO\cpp.png" />
+    <BundleResource Include="Resources\IO\css.png" />
+    <BundleResource Include="Resources\IO\dat.png" />
+    <BundleResource Include="Resources\IO\dmg.png" />
+    <BundleResource Include="Resources\IO\doc.png" />
+    <BundleResource Include="Resources\IO\dotx.png" />
+    <BundleResource Include="Resources\IO\dwg.png" />
+    <BundleResource Include="Resources\IO\dxf.png" />
+    <BundleResource Include="Resources\IO\eps.png" />
+    <BundleResource Include="Resources\IO\exe.png" />
+    <BundleResource Include="Resources\IO\flv.png" />
+    <BundleResource Include="Resources\IO\gif.png" />
+    <BundleResource Include="Resources\IO\h.png" />
+    <BundleResource Include="Resources\IO\hpp.png" />
+    <BundleResource Include="Resources\IO\html.png" />
+    <BundleResource Include="Resources\IO\ics.png" />
+    <BundleResource Include="Resources\IO\iso.png" />
+    <BundleResource Include="Resources\IO\java.png" />
+    <BundleResource Include="Resources\IO\jpg.png" />
+    <BundleResource Include="Resources\IO\key.png" />
+    <BundleResource Include="Resources\IO\mid.png" />
+    <BundleResource Include="Resources\IO\mp3.png" />
+    <BundleResource Include="Resources\IO\mp4.png" />
+    <BundleResource Include="Resources\IO\mpg.png" />
+    <BundleResource Include="Resources\IO\odf.png" />
+    <BundleResource Include="Resources\IO\ods.png" />
+    <BundleResource Include="Resources\IO\odt.png" />
+    <BundleResource Include="Resources\IO\otp.png" />
+    <BundleResource Include="Resources\IO\ots.png" />
+    <BundleResource Include="Resources\IO\ott.png" />
+    <BundleResource Include="Resources\IO\pdf.png" />
+    <BundleResource Include="Resources\IO\php.png" />
+    <BundleResource Include="Resources\IO\png.png" />
+    <BundleResource Include="Resources\IO\ppt.png" />
+    <BundleResource Include="Resources\IO\pptx.png" />
+    <BundleResource Include="Resources\IO\psd.png" />
+    <BundleResource Include="Resources\IO\py.png" />
+    <BundleResource Include="Resources\IO\qt.png" />
+    <BundleResource Include="Resources\IO\rar.png" />
+    <BundleResource Include="Resources\IO\rb.png" />
+    <BundleResource Include="Resources\IO\rtf.png" />
+    <BundleResource Include="Resources\IO\sql.png" />
+    <BundleResource Include="Resources\IO\tga.png" />
+    <BundleResource Include="Resources\IO\tgz.png" />
+    <BundleResource Include="Resources\IO\tiff.png" />
+    <BundleResource Include="Resources\IO\txt.png" />
+    <BundleResource Include="Resources\IO\wav.png" />
+    <BundleResource Include="Resources\IO\xls.png" />
+    <BundleResource Include="Resources\IO\xlsx.png" />
+    <BundleResource Include="Resources\IO\xml.png" />
+    <BundleResource Include="Resources\IO\yml.png" />
+    <BundleResource Include="Resources\IO\zip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Info.plist">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Entitlements.plist">
+      <SubType>Designer</SubType>
+    </None>
+    <InterfaceDefinition Include="Cells\LoadingCell.xib" />
+    <InterfaceDefinition Include="Cells\NoDataCell.xib" />
+    <None Include="packages.config" />
+    <InterfaceDefinition Include="Storyboards\Home.storyboard" />
+    <InterfaceDefinition Include="Storyboards\News.storyboard" />
+    <InterfaceDefinition Include="Storyboards\Timetable.storyboard" />
+    <InterfaceDefinition Include="Storyboards\Map.storyboard" />
+    <InterfaceDefinition Include="Storyboards\Events.storyboard" />
+    <InterfaceDefinition Include="Storyboards\Badge.storyboard" />
+    <InterfaceDefinition Include="Storyboards\Filer.storyboard" />
+    <InterfaceDefinition Include="Storyboards\Settings.storyboard" />
+    <InterfaceDefinition Include="Storyboards\Menu.storyboard" />
+    <InterfaceDefinition Include="Storyboards\Launchscreen.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bootstrap\DownloadCachePluginBootstrap.cs" />
+    <Compile Include="Bootstrap\FilePluginBootstrap.cs" />
+    <Compile Include="Bootstrap\WebBrowserPluginBootstrap.cs" />
+    <Compile Include="Cells\DefaultImageStyleTableViewCell.cs" />
+    <Compile Include="Converters.cs" />
+    <Compile Include="Converter\LocalTimeConverter.cs" />
+    <Compile Include="Utils\CellDefinitionAttributeException.cs" />
+    <Compile Include="Utils\ImageLoader.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="PlatformServices\AccountService.cs" />
+    <Compile Include="PlatformServices\DeviceService.cs" />
+    <Compile Include="PlatformServices\HttpService.cs" />
+    <Compile Include="PlatformServices\IioAbstract.cs" />
+    <Compile Include="PlatformServices\IioCacheService.cs" />
+    <Compile Include="PlatformServices\IioStorageService.cs" />
+    <Compile Include="PlatformServices\LogService.cs" />
+    <Compile Include="PlatformServices\UserInteractionService.cs" />
+    <Compile Include="Setup.cs" />
+    <Compile Include="Utils\Reachability.cs" />
+    <Compile Include="Views\NewsViewController.cs" />
+    <Compile Include="Views\NewsViewController.designer.cs">
+      <DependentUpon>NewsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NewsFeedViewController.cs" />
+    <Compile Include="Views\NewsFeedViewController.designer.cs">
+      <DependentUpon>NewsFeedViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cells\NewsImageCell.cs" />
+    <Compile Include="Cells\NewsImageCell.designer.cs">
+      <DependentUpon>NewsImageCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cells\NewsTextCell.cs" />
+    <Compile Include="Cells\NewsTextCell.designer.cs">
+      <DependentUpon>NewsTextCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MenuViewController.cs" />
+    <Compile Include="Views\MenuViewController.designer.cs">
+      <DependentUpon>MenuViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Converter\NegateConverter.cs" />
+    <Compile Include="Views\CalendarViewController.cs" />
+    <Compile Include="Views\CalendarViewController.designer.cs">
+      <DependentUpon>CalendarViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SportsViewController.cs" />
+    <Compile Include="Views\SportsViewController.designer.cs">
+      <DependentUpon>SportsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cells\CalendarEventCell.cs" />
+    <Compile Include="Cells\CalendarEventCell.designer.cs">
+      <DependentUpon>CalendarEventCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AccountViewController.cs" />
+    <Compile Include="Views\AccountViewController.designer.cs">
+      <DependentUpon>AccountViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extensions\CommandExtensions.cs" />
+    <Compile Include="Extensions\NsDataExtensions.cs" />
+    <Compile Include="Views\AccountBalanceViewController.cs" />
+    <Compile Include="Views\AccountBalanceViewController.designer.cs">
+      <DependentUpon>AccountBalanceViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Converter\BalanceDepositConverter.cs" />
+    <Compile Include="Converter\BalanceUpdateConverter.cs" />
+    <Compile Include="Converter\DateTimeRelativeConverter.cs" />
+    <Compile Include="Views\FilerViewController.cs" />
+    <Compile Include="Views\FilerViewController.designer.cs">
+      <DependentUpon>FilerViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cells\FilerCell.cs" />
+    <Compile Include="Cells\FilerCell.designer.cs">
+      <DependentUpon>FilerCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\SingleCellTableSource.cs" />
+    <Compile Include="Attributes\CellDefinitionAttribute.cs" />
+    <Compile Include="Views\MapViewController.cs" />
+    <Compile Include="Views\MapViewController.designer.cs">
+      <DependentUpon>MapViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\MvxNavigationController.cs" />
+    <Compile Include="Utils\MvxCompositeViewController.cs" />
+    <Compile Include="Utils\ProxyViewModelRequest.cs" />
+    <Compile Include="Views\MapDetailViewController.cs" />
+    <Compile Include="Views\MapDetailViewController.designer.cs">
+      <DependentUpon>MapDetailViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MapOverviewViewController.cs" />
+    <Compile Include="Views\MapOverviewViewController.designer.cs">
+      <DependentUpon>MapOverviewViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attributes\CompositeViewAttribute.cs" />
+    <Compile Include="Views\AccountCompleteViewController.cs" />
+    <Compile Include="Views\AccountCompleteViewController.designer.cs">
+      <DependentUpon>AccountCompleteViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AccountIndexViewController.cs" />
+    <Compile Include="Views\AccountIndexViewController.designer.cs">
+      <DependentUpon>AccountIndexViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AccountInfoViewController.cs" />
+    <Compile Include="Views\AccountInfoViewController.designer.cs">
+      <DependentUpon>AccountInfoViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AccountRenewViewController.cs" />
+    <Compile Include="Views\AccountRenewViewController.designer.cs">
+      <DependentUpon>AccountRenewViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cells\SettingsCell.cs" />
+    <Compile Include="Cells\SettingsCell.designer.cs">
+      <DependentUpon>SettingsCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SettingsViewController.cs" />
+    <Compile Include="Views\SettingsViewController.designer.cs">
+      <DependentUpon>SettingsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attributes\WrapWithAttribute.cs" />
+    <Compile Include="Converter\FilerIconConverter.cs" />
+    <Compile Include="Converter\BundleIconConverter.cs" />
+    <Compile Include="MvxStoryBoardViewsContainer.cs" />
+    <Compile Include="Views\HomeViewController.cs" />
+    <Compile Include="Views\HomeViewController.designer.cs">
+      <DependentUpon>HomeViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cells\NavCell.cs" />
+    <Compile Include="Cells\NavCell.designer.cs">
+      <DependentUpon>NavCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extensions\TableExtensions.cs" />
+    <Compile Include="Extensions\NavigationExtensions.cs" />
+    <Compile Include="Converter\FbImageConverter.cs" />
+    <Compile Include="Views\AdunisViewController.cs" />
+    <Compile Include="Views\AdunisViewController.designer.cs">
+      <DependentUpon>AdunisViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cells\AdunisCell.cs" />
+    <Compile Include="Cells\AdunisCell.designer.cs">
+      <DependentUpon>AdunisCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TimetableViewController.cs" />
+    <Compile Include="Views\TimetableViewController.designer.cs">
+      <DependentUpon>TimetableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TimetableEntriesViewController.cs" />
+    <Compile Include="Views\TimetableEntriesViewController.designer.cs">
+      <DependentUpon>TimetableEntriesViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cells\TimetableCell.cs" />
+    <Compile Include="Cells\TimetableCell.designer.cs">
+      <DependentUpon>TimetableCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ExamViewController.cs" />
+    <Compile Include="Cells\ExamCell.cs" />
+    <Compile Include="Cells\ExamCell.designer.cs">
+      <DependentUpon>ExamCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ExamEntriesViewController.cs" />
+    <Compile Include="Views\ExamEntriesViewController.designer.cs">
+      <DependentUpon>ExamEntriesViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Converter\AppointmentTimeConverter.cs" />
+    <Compile Include="Converter\TimeperiodConverter.cs" />
+    <Compile Include="Converter\AdunisIconConverter.cs" />
+    <Compile Include="Converter\ResConverter.cs" />
+    <Compile Include="LinkerPleaseInclude.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Utils\MvxNativeHttpFileDownloader.cs" />
+    <Compile Include="Utils\MvxNativeFileDownloadRequest.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Cells\LoadingCell.cs" />
+    <Compile Include="Cells\LoadingCell.designer.cs">
+      <DependentUpon>LoadingCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Converter\IsEmptyConverter.cs" />
+    <Compile Include="Cells\NewsTitleCell.cs" />
+    <Compile Include="Cells\NewsTitleCell.designer.cs">
+      <DependentUpon>NewsTitleCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Converter\FilerLocalConverter.cs" />
+    <Compile Include="Cells\NoDataCell.cs" />
+    <Compile Include="Cells\NoDataCell.designer.cs">
+      <DependentUpon>NoDataCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bootstrap\VisibilityPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\MethodBindingPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\JsonPluginBootstrap.cs" />
+    <Compile Include="Utils\DatePickerModel.cs" />
+    <Compile Include="Utils\DatePickerChangedEventArgs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hsr.Campus.Core\Hsr.Campus.Core.csproj">
+      <Project>{2635B57D-CA68-49A9-9914-0DF8A9229895}</Project>
+      <Name>Hsr.Campus.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork%402x" />
+    <ITunesArtwork Include="iTunesArtwork" />
+  </ItemGroup>
+  <Target Name="_CompileITunesMetadata" DependsOnTargets="_DetectSdkLocations;_DetectAppManifest;_GenerateBundleName;_CompileAppManifest">
+    <Message Text="Skipping CompileITunesMetadata task to prevent inclusion of iTunesMetadata.plist in the IPA" />
+  </Target>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\HSR-Square-Bottom1024@1x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\HSR-Square-Bottom29@2x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\HSR-Square-Bottom29@3x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\HSR-Square-Bottom40@2x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\HSR-Square-Bottom40@3x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\HSR-Square-Bottom60@2x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\HSR-Square-Bottom60@3x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Home.spriteatlas\Cafeteria.imageset\Cafeteria.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Home.spriteatlas\Cafeteria.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Home.spriteatlas\Calendar.imageset\Calendar.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Home.spriteatlas\Calendar.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Home.spriteatlas\Card.imageset\Badge.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Home.spriteatlas\Card.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Home.spriteatlas\Compass.imageset\Compass.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Home.spriteatlas\Compass.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Home.spriteatlas\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Home.spriteatlas\Exam.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Home.spriteatlas\Exam.imageset\Exam.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Home.spriteatlas\Filer.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Home.spriteatlas\Filer.imageset\Filer.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Home.spriteatlas\News.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Home.spriteatlas\News.imageset\News.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Home.spriteatlas\Setup.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Home.spriteatlas\Setup.imageset\Setup.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Home.spriteatlas\Sport.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Home.spriteatlas\Sport.imageset\Sport.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Home.spriteatlas\Timetable.imageset\Calendar.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Home.spriteatlas\Timetable.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\HSR_Logo.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\HSR_Logo_Retina.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\News.spriteatlas\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\News.spriteatlas\TabAgenda.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\News.spriteatlas\TabAgenda.imageset\TabAgenda.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\News.spriteatlas\TabHSR.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\News.spriteatlas\TabHSR.imageset\TabHSR.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\News.spriteatlas\TabSport.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\News.spriteatlas\TabSport.imageset\TabSport.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\News.spriteatlas\TabVSHSR.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\News.spriteatlas\TabVSHSR.imageset\TabVSHSR.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Settings.spriteatlas\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Settings.spriteatlas\InfoAccount.imageset\Account.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Settings.spriteatlas\InfoAccount.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Settings.spriteatlas\InfoHeart.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Settings.spriteatlas\InfoHeart.imageset\Heart.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Settings.spriteatlas\InfoStorage.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Settings.spriteatlas\InfoStorage.imageset\Storage.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Wochentage.spriteatlas\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Wochentage.spriteatlas\Di.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Wochentage.spriteatlas\Di.imageset\Di.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Wochentage.spriteatlas\Div.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Wochentage.spriteatlas\Div.imageset\Div.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Wochentage.spriteatlas\Do.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Wochentage.spriteatlas\Do.imageset\Do.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Wochentage.spriteatlas\Fr.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Wochentage.spriteatlas\Fr.imageset\Fr.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Wochentage.spriteatlas\Mi.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Wochentage.spriteatlas\Mi.imageset\Mi.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Wochentage.spriteatlas\Mo.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Wochentage.spriteatlas\Mo.imageset\Mo.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Wochentage.spriteatlas\Sa.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Wochentage.spriteatlas\Sa.imageset\Sa.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Wochentage.spriteatlas\So.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Wochentage.spriteatlas\So.imageset\So.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Home.spriteatlas\HSR_Logo.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Home.spriteatlas\HSR_Logo.imageset\HSR_Logo.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LogoSmallBottom%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LogoSmallBottom%401x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LogoSmallBottom%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.2\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
+    <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.2\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
+    <AdditionalFiles Include="stylecop.json" />
+  </ItemGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\NETStandard.Library.2.0.1\build\netstandard2.0\NETStandard.Library.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NETStandard.Library.2.0.1\build\netstandard2.0\NETStandard.Library.targets'))" />
+  </Target>
+  <Import Project="..\packages\NETStandard.Library.2.0.1\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\packages\NETStandard.Library.2.0.1\build\netstandard2.0\NETStandard.Library.targets')" />
+</Project>

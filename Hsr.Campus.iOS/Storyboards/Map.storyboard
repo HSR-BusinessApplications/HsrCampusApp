@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="788">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" id="789" customClass="MapViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="792">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="791">
+                                <rect key="frame" x="27" y="93" width="320" height="548"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="793"/>
+                                    <constraint firstAttribute="height" constant="548" id="794"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="jPF-Tw-nZK"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="791" firstAttribute="top" secondItem="Hlh-yS-rWY" secondAttribute="top" constant="73" id="FtD-4P-u9r"/>
+                            <constraint firstItem="791" firstAttribute="leading" secondItem="Hlh-yS-rWY" secondAttribute="leading" constant="27" id="LAN-nA-2tb"/>
+                            <constraint firstItem="Hlh-yS-rWY" firstAttribute="bottom" secondItem="791" secondAttribute="bottom" constant="26" id="R7N-5m-wZa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Hlh-yS-rWY"/>
+                    </view>
+                    <connections>
+                        <outlet property="MapImage" destination="791" id="790"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="799" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3045.5999999999999" y="-193.85307346326837"/>
+        </scene>
+        <!--Map Overview View Controller-->
+        <scene sceneID="800">
+            <objects>
+                <viewController storyboardIdentifier="MapOverviewViewController" id="801" customClass="MapOverviewViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="806">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" minimumZoomScale="0.25" maximumZoomScale="4" translatesAutoresizingMaskIntoConstraints="NO" id="803">
+                                <rect key="frame" x="4" y="24" width="367" height="639"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="805">
+                                        <rect key="frame" x="47" y="84" width="312" height="540"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="803" firstAttribute="bottom" secondItem="WqK-FJ-H6g" secondAttribute="bottom" constant="-4" id="807"/>
+                            <constraint firstItem="803" firstAttribute="top" secondItem="WqK-FJ-H6g" secondAttribute="top" constant="4" id="809"/>
+                            <constraint firstItem="803" firstAttribute="trailing" secondItem="WqK-FJ-H6g" secondAttribute="trailing" constant="-4" id="811"/>
+                            <constraint firstItem="803" firstAttribute="leading" secondItem="WqK-FJ-H6g" secondAttribute="leading" constant="4" id="812"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WqK-FJ-H6g"/>
+                    </view>
+                    <connections>
+                        <outlet property="MapContainer" destination="803" id="802"/>
+                        <outlet property="MapImage" destination="805" id="804"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="813" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3028" y="686"/>
+        </scene>
+        <!--Map Detail View Controller-->
+        <scene sceneID="814">
+            <objects>
+                <tabBarController storyboardIdentifier="MapDetailViewController" definesPresentationContext="YES" id="815" customClass="MapDetailViewController" sceneMemberID="viewController">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="816">
+                        <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="817" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3028" y="1459"/>
+        </scene>
+    </scenes>
+</document>

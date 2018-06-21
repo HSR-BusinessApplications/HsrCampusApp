@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sports View Controller-->
+        <scene sceneID="236">
+            <objects>
+                <tabBarController storyboardIdentifier="SportsViewController" autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" definesPresentationContext="YES" id="237" customClass="SportsViewController" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="238">
+                        <rect key="frame" x="0.0" y="687" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="239" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="436" y="-405"/>
+        </scene>
+        <!--Calendar View Controller-->
+        <scene sceneID="241">
+            <objects>
+                <tableViewController storyboardIdentifier="CalendarViewController" id="242" customClass="CalendarViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="-1" id="243">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="GuO-05-Q4M"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CalendarEventCell" rowHeight="167" id="246" customClass="CalendarEventCell">
+                                <rect key="frame" x="0.0" y="28" width="375" height="167"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="246" id="255">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="166.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="254">
+                                            <rect key="frame" x="20" y="11" width="335" height="20.5"/>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <viewLayoutGuide key="safeArea" id="pmt-50-Rgs"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Location" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="250">
+                                            <rect key="frame" x="20" y="40.5" width="335" height="14.5"/>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="256"/>
+                                            </constraints>
+                                            <viewLayoutGuide key="safeArea" id="dKv-S2-0HR"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Time" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="252">
+                                            <rect key="frame" x="20" y="65.5" width="335" height="14.5"/>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <viewLayoutGuide key="safeArea" id="ztN-oz-0sp"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="248">
+                                            <rect key="frame" x="20" y="91" width="335" height="14.5"/>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <viewLayoutGuide key="safeArea" id="wyd-HB-qhU"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.3333333432674408" green="0.3333333432674408" blue="0.3333333432674408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="250" firstAttribute="top" secondItem="254" secondAttribute="centerY" constant="19" id="257"/>
+                                        <constraint firstItem="252" firstAttribute="top" secondItem="250" secondAttribute="centerY" constant="18" id="258"/>
+                                        <constraint firstItem="248" firstAttribute="top" secondItem="252" secondAttribute="centerY" constant="18" id="259"/>
+                                        <constraint firstItem="254" firstAttribute="top" secondItem="255" secondAttribute="top" constant="11" id="260"/>
+                                        <constraint firstItem="254" firstAttribute="leading" secondItem="255" secondAttribute="leading" constant="20" id="261"/>
+                                        <constraint firstItem="250" firstAttribute="leading" secondItem="255" secondAttribute="leading" constant="20" id="262"/>
+                                        <constraint firstItem="252" firstAttribute="leading" secondItem="255" secondAttribute="leading" constant="20" id="263"/>
+                                        <constraint firstItem="248" firstAttribute="leading" secondItem="255" secondAttribute="leading" constant="20" id="264"/>
+                                        <constraint firstAttribute="trailing" secondItem="254" secondAttribute="trailing" constant="20" id="265"/>
+                                        <constraint firstAttribute="trailing" secondItem="250" secondAttribute="trailing" constant="20" id="266"/>
+                                        <constraint firstAttribute="trailing" secondItem="252" secondAttribute="trailing" constant="20" id="267"/>
+                                        <constraint firstAttribute="trailing" secondItem="248" secondAttribute="trailing" constant="20" id="268"/>
+                                    </constraints>
+                                    <viewLayoutGuide key="safeArea" id="act-GR-I7f"/>
+                                </tableViewCellContentView>
+                                <viewLayoutGuide key="safeArea" id="Few-AQ-hw9"/>
+                                <connections>
+                                    <outlet property="DescriptionLabel" destination="248" id="247"/>
+                                    <outlet property="LocationLabel" destination="250" id="249"/>
+                                    <outlet property="TimeLabel" destination="252" id="251"/>
+                                    <outlet property="TitleLabel" destination="254" id="253"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="242" id="244"/>
+                            <outlet property="delegate" destination="242" id="245"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="269" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1084" y="-405"/>
+        </scene>
+    </scenes>
+</document>

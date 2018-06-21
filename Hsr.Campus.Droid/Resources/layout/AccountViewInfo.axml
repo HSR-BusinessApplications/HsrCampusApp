@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:layout_alignParentTop="true"
+        android:id="@+id/layout"
+        android:padding="10dp">
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/OAuthIdentity"
+                style="@android:style/TextAppearance.Small" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                local:MvxBind="Text Account.UserName"
+                android:layout_column="1"
+                style="@android:style/TextAppearance.Small" />
+        </TableRow>
+        <View
+            android:layout_height="5dip"
+            android:background="@android:color/transparent" />
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/OAuthNextRefresh"
+                style="@android:style/TextAppearance.Small" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                local:MvxBind="Text Account.TokenRetrieved"
+                android:layout_column="1"
+                style="@android:style/TextAppearance.Small" />
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:layout_below="@id/layout"
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/OAuthPermissions"
+        android:layout_margin="10dp"
+        local:MvxBind="Click GoViewCommand"
+        android:background="@color/hsr_blue"
+        style="@android:style/TextAppearance.Large.Inverse" />
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/OAuthRemove"
+        android:layout_margin="10dp"
+        android:background="@color/red"
+        style="@android:style/TextAppearance.Large.Inverse" />
+</RelativeLayout>

@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ResourceFlowDirection" xml:space="preserve">
+    <value>LeftToRight</value>
+    <comment>Controls the FlowDirection for all elements in the RootFrame. Set to the traditional direction of this resource file's language</comment>
+  </data>
+  <data name="ResourceLanguage" xml:space="preserve">
+    <value>en-US</value>
+    <comment>Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</comment>
+  </data>
+  <data name="ApplicationTitle" xml:space="preserve">
+    <value>HSR Campus</value>
+  </data>
+  <data name="AppBarButtonText" xml:space="preserve">
+    <value>add</value>
+  </data>
+  <data name="TileBadge" xml:space="preserve">
+    <value>Badge</value>
+  </data>
+  <data name="TileMenu" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="TileCampusMap" xml:space="preserve">
+    <value>Campus Map</value>
+  </data>
+  <data name="TileNews" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="TileTimetable" xml:space="preserve">
+    <value>Timetable</value>
+  </data>
+  <data name="TileLectureNotes" xml:space="preserve">
+    <value>Lecture Notes</value>
+  </data>
+  <data name="TileSetupAccount" xml:space="preserve">
+    <value>Account Setup</value>
+  </data>
+  <data name="TileSport" xml:space="preserve">
+    <value>HSR Sport</value>
+  </data>
+  <data name="TileAccount" xml:space="preserve">
+    <value>HSR Account</value>
+  </data>
+  <data name="NewsReadMore" xml:space="preserve">
+    <value>read more »</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Loading…</value>
+  </data>
+  <data name="LoadingNews" xml:space="preserve">
+    <value>Loading more posts…</value>
+  </data>
+  <data name="LoadingNewsNew" xml:space="preserve">
+    <value>Loading new posts…</value>
+  </data>
+  <data name="DayFriday" xml:space="preserve">
+    <value>Fr</value>
+  </data>
+  <data name="DayMonday" xml:space="preserve">
+    <value>Mo</value>
+  </data>
+  <data name="DayThursday" xml:space="preserve">
+    <value>Th</value>
+  </data>
+  <data name="DayTuesday" xml:space="preserve">
+    <value>Tu</value>
+  </data>
+  <data name="DayWednesday" xml:space="preserve">
+    <value>We</value>
+  </data>
+  <data name="NoMenus" xml:space="preserve">
+    <value>No menus currently available for this location.</value>
+  </data>
+  <data name="LoadingMenus" xml:space="preserve">
+    <value>Updating menus...</value>
+  </data>
+  <data name="MapBuilding" xml:space="preserve">
+    <value>Building {0}</value>
+  </data>
+  <data name="MapOverview" xml:space="preserve">
+    <value>Overview</value>
+  </data>
+  <data name="LoadingEvents" xml:space="preserve">
+    <value>Loading events...</value>
+  </data>
+  <data name="LocationFormat" xml:space="preserve">
+    <value>Location: </value>
+  </data>
+  <data name="ActionCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ActionOk" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Username:</value>
+  </data>
+  <data name="ActionDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="AccountSetupVerify" xml:space="preserve">
+    <value>Verifying account</value>
+  </data>
+  <data name="MessageCredentials" xml:space="preserve">
+    <value>Please check your credentials.</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="AppFirstRunMessage" xml:space="preserve">
+    <value>This app serves as a supplement to the existing systems of the HSR. There is no warranty of accuracy, completeness or availability. The information displayed is not legally valid.</value>
+  </data>
+  <data name="AppFirstRunTitle" xml:space="preserve">
+    <value>Disclaimer</value>
+  </data>
+  <data name="MessageCredentialsDelete" xml:space="preserve">
+    <value>Are you sure that you want to delete this account?</value>
+  </data>
+  <data name="UpdateBadgeSaldo" xml:space="preserve">
+    <value>Updating badge saldo...</value>
+  </data>
+  <data name="BadgeTextWindows" xml:space="preserve">
+    <value>You must be connected to the HSR network to update your account. This is not a real-time value display, it may take up to an hour for transactions to be processed.
+
+You can also add a live tile with your account balance to your device's home screen.</value>
+  </data>
+  <data name="Modules" xml:space="preserve">
+    <value>Modules</value>
+  </data>
+  <data name="DaySunday" xml:space="preserve">
+    <value>Su</value>
+  </data>
+  <data name="DaySaturday" xml:space="preserve">
+    <value>Sa</value>
+  </data>
+  <data name="LoadingTimetable" xml:space="preserve">
+    <value>Updating timetable...</value>
+  </data>
+  <data name="SettingAccountTitle" xml:space="preserve">
+    <value>HSR Account</value>
+  </data>
+  <data name="SettingAccountTitleSub" xml:space="preserve">
+    <value>Configuration and Usage</value>
+  </data>
+  <data name="SettingAppInfoTitle" xml:space="preserve">
+    <value>App Info</value>
+  </data>
+  <data name="SettingStorageTitle" xml:space="preserve">
+    <value>Storage Management</value>
+  </data>
+  <data name="SettingStorageTitleSub" xml:space="preserve">
+    <value>Cache, Network Data</value>
+  </data>
+  <data name="AppVersion" xml:space="preserve">
+    <value>Echo</value>
+  </data>
+  <data name="AppVersionTitle" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="SettingCacheTitle" xml:space="preserve">
+    <value>Clear Cache</value>
+  </data>
+  <data name="SettingCacheTitleSub" xml:space="preserve">
+    <value>{0} Files, {1:0.00} MB</value>
+  </data>
+  <data name="SettingSuccessCacheClear" xml:space="preserve">
+    <value>Cache successfully cleared</value>
+  </data>
+  <data name="SettingOfficialTitle" xml:space="preserve">
+    <value>Official HSR App</value>
+  </data>
+  <data name="SettingOfficialTitleSub" xml:space="preserve">
+    <value>For assistence please contact the HSR IT-ServiceDesk</value>
+  </data>
+  <data name="AddLiveTile" xml:space="preserve">
+    <value>Add live tile</value>
+  </data>
+  <data name="TileExams" xml:space="preserve">
+    <value>Exams</value>
+  </data>
+  <data name="LoadingNetwork" xml:space="preserve">
+    <value>Loading directory...</value>
+  </data>
+  <data name="DownloadingError" xml:space="preserve">
+    <value>Unable to download file: {0}</value>
+  </data>
+  <data name="DownloadingFile" xml:space="preserve">
+    <value>Downloading file...</value>
+  </data>
+  <data name="OpeningError" xml:space="preserve">
+    <value>Unable to open file: {0}</value>
+  </data>
+  <data name="OpeningFile" xml:space="preserve">
+    <value>Opening file...</value>
+  </data>
+  <data name="MapFirstRunMessage" xml:space="preserve">
+    <value>Pinch and rotate the map to enlarge the image. Double tap a building to view the floorplans.</value>
+  </data>
+  <data name="MapFirstRunTitle" xml:space="preserve">
+    <value>HSR Campus Map</value>
+  </data>
+  <data name="BadgeUpdate" xml:space="preserve">
+    <value>Last Updated: {0:dd.MM.yyyy H:mm:ss}</value>
+  </data>
+  <data name="NoTimetable" xml:space="preserve">
+    <value>No timetable available</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="NoNetworkList" xml:space="preserve">
+    <value>No lecture note data available</value>
+  </data>
+  <data name="ConnectionFailed" xml:space="preserve">
+    <value>Unable to retrieve data - please check your connection.</value>
+  </data>
+  <data name="DateTimeRealtiveNow" xml:space="preserve">
+    <value>just a second ago</value>
+  </data>
+  <data name="DateTimeRealtiveSeconds" xml:space="preserve">
+    <value>{0:0} seconds ago</value>
+  </data>
+  <data name="DateTimeRelativeDays" xml:space="preserve">
+    <value>{0:g}</value>
+  </data>
+  <data name="DateTimeRelativeHours" xml:space="preserve">
+    <value>{0:0} hours ago</value>
+  </data>
+  <data name="DateTimeRelativeMinutes" xml:space="preserve">
+    <value>{0:0} minutes ago</value>
+  </data>
+  <data name="LastUpdate" xml:space="preserve">
+    <value>Last Update:</value>
+  </data>
+  <data name="AccountBalance" xml:space="preserve">
+    <value>CHF {0:00.00}</value>
+  </data>
+  <data name="TileADUNIS" xml:space="preserve">
+    <value>ADUNIS</value>
+  </data>
+  <data name="WeekSelect" xml:space="preserve">
+    <value>Cal-Week: {0} - TW: {1}</value>
+  </data>
+  <data name="WeekSelection" xml:space="preserve">
+    <value>Select Week</value>
+  </data>
+  <data name="PivotWeek" xml:space="preserve">
+    <value>Week {0}</value>
+  </data>
+  <data name="OAuthError" xml:space="preserve">
+    <value>Uhh Ohh! An error occured whilst interacting with the HSR OAuth server. Error response: {0}</value>
+  </data>
+  <data name="OAuthErrorDenied" xml:space="preserve">
+    <value>Access has been denied by the OAuth server.</value>
+  </data>
+  <data name="OAuthSetup" xml:space="preserve">
+    <value>To improve security the HSR employs an OAuth authentication principle for it's mobile services. 
+User passwords are therefor never stored in this app.
+
+A browser window will open a secure connection to the HSR OAuth server. You can log-in with your HSR credentials. After accepting the client permissions you will be redirected back to this app.</value>
+  </data>
+  <data name="OAuthComplete" xml:space="preserve">
+    <value>Congratulations!
+
+This device has been authorized to use the HSR mobile services.
+
+You can manage your authorized devices on:
+https://mobile.hsr.ch/</value>
+  </data>
+  <data name="OAuthIdentity" xml:space="preserve">
+    <value>Identity</value>
+  </data>
+  <data name="OAuthNextRefresh" xml:space="preserve">
+    <value>Last Refresh (UTC)</value>
+  </data>
+  <data name="OAuthRemove" xml:space="preserve">
+    <value>Remove Account</value>
+  </data>
+  <data name="OAuthRemoveConfirm" xml:space="preserve">
+    <value>By deleting your account you will also remove any personal HSR data (Timetable, Exam, Badge, Lecture Notes) from this device.</value>
+  </data>
+  <data name="OAuthRenew" xml:space="preserve">
+    <value>Permission for this device has either been revoked or the OAuth token expired before it could be refreshed. Please reauthenticate this device.</value>
+  </data>
+  <data name="NoEntries" xml:space="preserve">
+    <value>No Entries</value>
+  </data>
+  <data name="NoData" xml:space="preserve">
+    <value>No data available</value>
+  </data>
+  <data name="NoMaps" xml:space="preserve">
+    <value>No maps available</value>
+  </data>
+  <data name="OAuthPermissions" xml:space="preserve">
+    <value>OAuth Permissions</value>
+  </data>
+  <data name="MapFirstRunMessageiOS" xml:space="preserve">
+    <value>Double tap a building to view the floorplans.</value>
+  </data>
+  <data name="BadgeText" xml:space="preserve">
+    <value>You must be connected to the HSR network to update your account. This is not a real-time value display, it may take up to an hour for transactions to be processed.</value>
+  </data>
+  <data name="AppStartSupportExpiredMessage" xml:space="preserve">
+    <value>The operatingsystem {0} is no longer supported. This is the last Update of CampusApp for {0}. Perform a operatingsystem update, so you can use the app correctly.</value>
+  </data>
+  <data name="AppStartSupportExpiredTitle" xml:space="preserve">
+    <value>Support expired</value>
+  </data>
+  <data name="OAuthErrorStateAuthenticated" xml:space="preserve">
+    <value>The authentication procedur is expired.
+If you want to login again, you must first delete your account.</value>
+  </data>
+  <data name="OAuthErrorStateUnauthenticated" xml:space="preserve">
+    <value>The authentication procedur is expired.
+Please try it againg.</value>
+  </data>
+  <data name="ActionDone" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="DayDiv" xml:space="preserve">
+    <value>Misc</value>
+  </data>
+  <data name="Updating" xml:space="preserve">
+    <value>Updating...</value>
+  </data>
+  <data name="Never" xml:space="preserve">
+    <value>Never</value>
+  </data>
+  <data name="SettingCacheClearConfirm" xml:space="preserve">
+    <value>Are you sure you want to delete the cache?</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ModernHttpClient_License" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\licenses\ModernHttpClient License.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="MvvmCross_License" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\licenses\MvvmCross License.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Newtonsoft_Json_License" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\licenses\Newtonsoft.Json License.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Remotion_Linq_License" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\licenses\Remotion.Linq License.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="SQLitePCL_License" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\licenses\SQLitePCL License.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="sqlite_net_License" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\licenses\sqlite-net License.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Square_License" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\licenses\Square License.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="StyleCopAnalyzers_License" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\licenses\StyleCopAnalyzers License.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Thinktecture_IdentiyModel_License" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\licenses\Thinktecture.IdentiyModel License.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Xamarin_License" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\licenses\Xamarin License.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Xam_Plugins_Settings_License" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\licenses\Xam.Plugins.Settings License.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="_NET_Core_Library_License" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\licenses\.NET Core Library License.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="_NET_Library_License" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\licenses\.NET Library License.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="_NET_Standard_Library_License" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\licenses\.NET Standard Library License.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ThirdPartyLibraries" xml:space="preserve">
+    <value>Third-Party Libraries</value>
+  </data>
+  <data name="ThirdPartyLibrariesText" xml:space="preserve">
+    <value>Licenses for third-party libraries.</value>
+  </data>
+  <data name="SettingAppInfoSubTitle" xml:space="preserve">
+    <value>Version Info, Licenses</value>
+  </data>
+</root>
