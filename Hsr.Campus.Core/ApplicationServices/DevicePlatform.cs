@@ -7,7 +7,6 @@ namespace Hsr.Campus.Core.ApplicationServices
     {
         Neutral = 0,
         Android,
-        WindowsPhone,
 
 #pragma warning disable SA1300 // Element must begin with upper-case letter
 
