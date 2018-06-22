@@ -63,8 +63,6 @@
                 {
                     case DevicePlatform.Android:
                         return this.oAuthClient + "Android";
-                    case DevicePlatform.WindowsPhone:
-                        return this.oAuthClient + "WindowsPhone";
                     case DevicePlatform.iOS:
                         return this.oAuthClient + "iOS";
                     default:

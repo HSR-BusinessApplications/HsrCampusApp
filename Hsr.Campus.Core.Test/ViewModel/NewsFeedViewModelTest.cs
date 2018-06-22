@@ -77,17 +77,17 @@ namespace Hsr.Campus.Core.Test.ViewModel
             this.Ioc.RegisterSingleton(navigationService.Object);
             this.Ioc.RegisterSingleton(newsHandler.Object);
 
-            var viewModel = this.Ioc.IoCConstruct<NewsFeedViewModel>();
+            var feedViewModel = this.Ioc.IoCConstruct<NewsFeedViewModel>();
 
             // Exercise
-            viewModel.Init(new SqlNewsFeed());
+            feedViewModel.Init(new SqlNewsFeed());
 
-            await viewModel.UpdateAsync(true, false);
+            await feedViewModel.UpdateAsync(true, false);
 
             // Verify
-            Assert.IsFalse(viewModel.IsWorking);
-            Assert.AreEqual(3, viewModel.Items.Count);
-            Assert.AreEqual(DateTime.Now.AddDays(-1).Date, viewModel.Items.First().Date.Date);
+            Assert.IsFalse(feedViewModel.IsWorking);
+            Assert.AreEqual(3, feedViewModel.Items.Count);
+            Assert.AreEqual(DateTime.Now.AddDays(-1).Date, feedViewModel.Items.First().Date.Date);
         }
 
         [TestMethod]
