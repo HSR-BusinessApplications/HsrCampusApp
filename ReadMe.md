@@ -17,7 +17,7 @@ If you want to compile in the Debug- and/or Release- Configuration you also have
 3. Create a folder named "CampusAppKeys" in the same directory the repository is in. (Ex.: Repository-Location: C:\Projects\CampusApp then the folder must be C:\Projects\CampusAppKeys).
 4. Copy the File "ServiceApi.cs" from the root folder of the repository into the CampusAppKeys folder
 
-Now you should be able to build in the Debug- and Release- Configuration. All the API functionality won't work without the correct API keys! If you want to have the full functionality, follow the "How to optain API Key File" guideline.
+Now you should be able to build in the Debug- and Release- Configuration. All the API functionality won't work without the correct API keys! If you want to have the full functionality, follow the "How to obtain API Key File" guideline.
 
 ### With API Key File(s)
 1. Download the Git Repository
