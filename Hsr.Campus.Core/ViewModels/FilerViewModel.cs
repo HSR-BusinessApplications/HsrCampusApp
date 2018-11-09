@@ -125,6 +125,11 @@ namespace Hsr.Campus.Core.ViewModels
 
         public void LoadListing(IOListing io)
         {
+            if (io == null)
+            {
+                return;
+            }
+
             if (io.IsDirectory)
             {
                 this.Navigate<FilerViewModel, FilerArgs>(new FilerArgs { CurrentDirectory = io.FullPath });
