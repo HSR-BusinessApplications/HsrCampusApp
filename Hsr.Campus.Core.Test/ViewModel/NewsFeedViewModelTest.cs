@@ -87,7 +87,7 @@ namespace Hsr.Campus.Core.Test.ViewModel
             // Verify
             Assert.IsFalse(feedViewModel.IsWorking);
             Assert.AreEqual(3, feedViewModel.Items.Count);
-            Assert.AreEqual(DateTime.Now.AddDays(-1).Date, feedViewModel.Items.First().Date.Date);
+            Assert.AreEqual(DateTime.UtcNow.AddDays(-1).Date, feedViewModel.Items.First().Date.Date);
         }
 
         [TestMethod]
@@ -283,7 +283,7 @@ namespace Hsr.Campus.Core.Test.ViewModel
         {
             return await Task.Factory.StartNew(() =>
             {
-                var staticDate = new DateTime(2015, 01, 01, 01, 01, 01);
+                var staticDate = new DateTime(2015, 01, 01, 01, 01, 01, DateTimeKind.Utc);
                 var news = new List<WhNews>
                 {
                     new WhNews
