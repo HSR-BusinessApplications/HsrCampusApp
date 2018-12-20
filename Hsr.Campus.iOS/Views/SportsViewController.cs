@@ -14,7 +14,7 @@ namespace Hsr.Campus.iOS
 
     [MvxFromStoryboard("Events")]
     [MvxChildPresentation]
-    internal partial class SportsViewController : MvxTabBarViewController<SportsViewModel>
+    internal partial class SportsViewController : MvxTableViewController<SportsViewModel>
     {
         private int tabCount = 0;
 
@@ -32,37 +32,7 @@ namespace Hsr.Campus.iOS
                 return;
             }
 
-            var viewControllers = this.ViewModel.Items.Select(this.CreateTabFor);
-
-            this.ViewControllers = viewControllers.ToArray();
-            this.CustomizableViewControllers = new UIViewController[] { };
-
-            if (this.ViewControllers != null && this.ViewControllers.Any())
-            {
-                this.SelectedViewController = this.ViewControllers[0];
-            }
-
             this.NavigationItem.Title = AppResources.TileSport;
-
-            this.SetRightBarItem(this.ViewModel.UpdateCommand);
-        }
-
-        private UIViewController CreateTabFor(CalendarViewModel viewModel)
-        {
-            var controller = new UINavigationController();
-            var screen = this.CreateViewControllerFor(viewModel) as UIViewController;
-
-            if (screen == null)
-            {
-                return controller;
-            }
-
-            screen.NavigationItem.Title = viewModel.Title;
-            controller.TabBarItem = new UITabBarItem(viewModel.Title, UIImage.FromBundle("TabAgenda"), this.tabCount++);
-
-            controller.PushViewController(screen, false);
-
-            return controller;
         }
     }
 }
