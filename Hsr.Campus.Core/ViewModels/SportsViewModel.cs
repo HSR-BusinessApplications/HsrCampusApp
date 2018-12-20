@@ -24,6 +24,7 @@ namespace Hsr.Campus.Core.ViewModels
         {
             this.NavigationService = navigationService;
             this.browser = browser;
+            this.serviceApi = serviceApi;
         }
 
         public string Text
