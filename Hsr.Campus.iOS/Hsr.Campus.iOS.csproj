@@ -40,7 +40,6 @@
     <CodeAnalysisRuleSet>..\CodeAnalysis_itba_v2.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
-    <DebugType>full</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
@@ -51,6 +50,8 @@
     <NoWarn>1591</NoWarn>
     <DocumentationFile>bin\iPhoneSimulator\Release\HsrCampusiOS.XML</DocumentationFile>
     <CodeAnalysisRuleSet>..\CodeAnalysis_itba_v2.ruleset</CodeAnalysisRuleSet>
+<CodesignKey>iPhone Developer</CodesignKey>
+<MtouchArch>i386, x86_64</MtouchArch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
