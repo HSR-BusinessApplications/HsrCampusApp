@@ -3,95 +3,48 @@
 
 namespace Hsr.Campus.Core.ViewModels
 {
+    using System;
     using System.ComponentModel;
     using System.Threading.Tasks;
     using System.Windows.Input;
+    using Hsr.Campus.Core.ApplicationServices;
+    using Hsr.Campus.Core.Resources;
     using MvvmCross.Core.Navigation;
     using MvvmCross.Core.ViewModels;
     using MvvmCross.Platform;
+    using MvvmCross.Plugins.WebBrowser;
 
-    public class SportsViewModel : AbstractCollectionViewModel<CalendarViewModel>
+    public class SportsViewModel : AbstractViewModel
     {
-        private CalendarViewModel calendarEvents;
-        private int subUpdating;
-        private bool isLocalUpdating;
+        private readonly IMvxWebBrowserTask browser;
+        private readonly IServiceApi serviceApi;
+        private string text;
 
-        public SportsViewModel(IMvxNavigationService navigationService)
+        public SportsViewModel(IMvxNavigationService navigationService, IMvxWebBrowserTask browser, IServiceApi serviceApi)
         {
             this.NavigationService = navigationService;
-
-            this.CalendarEvents = Mvx.IocConstruct<CalendarViewModel>();
-
-            this.CalendarEvents.PropertyChanged += this.OnSubIsUpdating;
-
-            this.Items.Add(this.CalendarEvents);
+            this.browser = browser;
         }
 
-        public ICommand UpdateCommand => new MvxAsyncCommand(() => this.UpdateAsync(true));
-
-        private bool IsLocalUpdating
+        public string Text
         {
             get
             {
-                return this.isLocalUpdating;
+                return this.text;
             }
 
             set
             {
-                this.isLocalUpdating = value;
-                this.IsUpdating = this.isLocalUpdating || this.subUpdating > 0;
-            }
-        }
-
-        private CalendarViewModel CalendarEvents
-        {
-            get
-            {
-                return this.calendarEvents;
-            }
-
-            set
-            {
-                this.calendarEvents = value;
+                this.text = value;
                 this.RaisePropertyChanged();
             }
         }
 
+        public ICommand GoSportsCommand => new MvxCommand(() => this.browser.ShowWebPage(this.serviceApi.SportsUri));
+
         public void Init()
         {
-            this.CalendarEvents.Init("Agenda");
-        }
-
-        public override async void Start()
-        {
-            base.Start();
-
-            this.CalendarEvents.Start();
-            await this.UpdateAsync(false);
-        }
-
-        public async Task UpdateAsync(bool force)
-        {
-            if (this.IsLocalUpdating)
-            {
-                return;
-            }
-
-            this.IsLocalUpdating = true;
-
-            await this.CalendarEvents.UpdateAsync(force, false);
-
-            this.IsLocalUpdating = false;
-        }
-
-        private void OnSubIsUpdating(object sender, PropertyChangedEventArgs args)
-        {
-            if (args.PropertyName == nameof(CalendarViewModel.IsUpdating))
-            {
-                this.subUpdating += ((CalendarViewModel)sender).IsUpdating ? 1 : -1;
-
-                this.IsUpdating = this.IsLocalUpdating || this.subUpdating > 0;
-            }
+            this.Text = AppResources.SportsText;
         }
     }
 }
