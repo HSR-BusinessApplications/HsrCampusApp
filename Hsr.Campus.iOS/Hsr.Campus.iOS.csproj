@@ -325,17 +325,9 @@
       <DependentUpon>MenuViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="Converter\NegateConverter.cs" />
-    <Compile Include="Views\CalendarViewController.cs" />
-    <Compile Include="Views\CalendarViewController.designer.cs">
-      <DependentUpon>CalendarViewController.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\SportsViewController.cs" />
     <Compile Include="Views\SportsViewController.designer.cs">
       <DependentUpon>SportsViewController.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Cells\CalendarEventCell.cs" />
-    <Compile Include="Cells\CalendarEventCell.designer.cs">
-      <DependentUpon>CalendarEventCell.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\AccountViewController.cs" />
     <Compile Include="Views\AccountViewController.designer.cs">

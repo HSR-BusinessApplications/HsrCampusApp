@@ -21,20 +21,18 @@ namespace Hsr.Campus.Core.ViewModels
         private readonly IUserInteractionService userInteraction;
         private readonly IAdunisRepository adunisRepository;
         private readonly INewsRepository newsRepository;
-        private readonly ICalendarEventRepository calendarEventRepository;
         private readonly IMenuRepository menuRepository;
         private readonly IDevice device;
 
         private string titleField;
 
-        public SettingsViewModel(IMvxNavigationService navigationService, IIOCacheService cacheService, IUserInteractionService userInteraction, IAdunisRepository adunisRepository, INewsRepository newsRepository, ICalendarEventRepository calendarEventRepository, IMenuRepository menuRepository, IDevice device)
+        public SettingsViewModel(IMvxNavigationService navigationService, IIOCacheService cacheService, IUserInteractionService userInteraction, IAdunisRepository adunisRepository, INewsRepository newsRepository, IMenuRepository menuRepository, IDevice device)
         {
             this.NavigationService = navigationService;
             this.cacheService = cacheService;
             this.userInteraction = userInteraction;
             this.adunisRepository = adunisRepository;
             this.newsRepository = newsRepository;
-            this.calendarEventRepository = calendarEventRepository;
             this.menuRepository = menuRepository;
             this.device = device;
         }
@@ -138,7 +136,6 @@ namespace Hsr.Campus.Core.ViewModels
         {
             this.IsUpdating = true;
             this.newsRepository.Truncate();
-            this.calendarEventRepository.Truncate();
             this.menuRepository.Truncate();
             this.adunisRepository.Truncate();
             this.cacheService.ClearAll();

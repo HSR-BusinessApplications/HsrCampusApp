@@ -14,7 +14,7 @@ namespace Hsr.Campus.iOS
 
     [MvxFromStoryboard("Events")]
     [MvxChildPresentation]
-    internal partial class SportsViewController : MvxTableViewController<SportsViewModel>
+    internal partial class SportsViewController : MvxViewController<SportsViewModel>
     {
         private int tabCount = 0;
 
@@ -31,6 +31,12 @@ namespace Hsr.Campus.iOS
             {
                 return;
             }
+
+            this.LabelText.Text = AppResources.SportsText;
+
+            this.ButtonSportsAgenda.SetTitle(AppResources.SportsAgenda, UIControlState.Normal);
+            this.ButtonSportsAgenda.BackgroundColor = Constants.HsrBlue;
+            this.ButtonSportsAgenda.TouchUpInside += this.ViewModel.GoSportsCommand.ToEventHandler();
 
             this.NavigationItem.Title = AppResources.TileSport;
         }
