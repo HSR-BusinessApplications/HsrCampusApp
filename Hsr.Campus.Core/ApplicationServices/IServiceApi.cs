@@ -39,6 +39,8 @@ namespace Hsr.Campus.Core.ApplicationServices
 
         string NewsFeedsUri { get; }
 
+        string SportsUri { get; }
+
         string IconUri { get; }
 
         string NewsUri { get; }
