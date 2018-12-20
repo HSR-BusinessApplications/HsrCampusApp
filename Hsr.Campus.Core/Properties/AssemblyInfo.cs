@@ -5,8 +5,8 @@ namespace Hsr.Campus.Core.Properties
 {
     public static class AssemblyInfo
     {
-        public const string AssemblyVersion = "3.0.*";
-        public const string AssemblyFileVersion = "3.0.2018.0622";
+        public const string AssemblyVersion = "3.0.1";
+        public const string AssemblyFileVersion = "3.0.2018.1108";
         public const string AssemblyInformationalVersion = AssemblyFileVersion + "-" + Compile;
         public const string Company = "Hochschule für Technik Rapperswil";
         public const string Copyright = "Copyright © HSR 2018";
