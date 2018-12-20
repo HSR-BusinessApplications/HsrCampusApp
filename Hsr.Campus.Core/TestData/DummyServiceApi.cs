@@ -12,8 +12,6 @@ namespace Hsr.Campus.Core.TestData
 
     public class DummyServiceApi : IServiceApi
     {
-        public string CalendarEvent => "dummyCalenderKey";
-
         public string News => "dummyNewsKey";
 
         public string Map => "dummyMapKey";
@@ -31,8 +29,6 @@ namespace Hsr.Campus.Core.TestData
         public string TimetableUri => "https://example.com";
 
         public string ExamUri => "https://example.com";
-
-        public string CalendarUri => "https://example.com";
 
         public string FilerApiUriBase => "https://example.com";
 
