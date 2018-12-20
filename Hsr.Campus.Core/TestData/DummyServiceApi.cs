@@ -46,6 +46,8 @@ namespace Hsr.Campus.Core.TestData
 
         public string NewsFeedsUri => "https://example.com";
 
+        public string SportsUri => "https://example.com";
+
         public string IconUri => "https://example.com";
 
         public string NewsUri => "https://example.com";
