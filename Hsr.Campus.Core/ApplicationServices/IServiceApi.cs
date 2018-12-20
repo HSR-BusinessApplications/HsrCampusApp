@@ -5,8 +5,6 @@ namespace Hsr.Campus.Core.ApplicationServices
 {
     public interface IServiceApi
     {
-        string CalendarEvent { get; }
-
         string News { get; }
 
         string Map { get; }
@@ -24,8 +22,6 @@ namespace Hsr.Campus.Core.ApplicationServices
         string TimetableUri { get; }
 
         string ExamUri { get; }
-
-        string CalendarUri { get; }
 
         string FilerApiUriBase { get; }
 
