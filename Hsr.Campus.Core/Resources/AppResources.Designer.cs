@@ -1018,6 +1018,24 @@ namespace Hsr.Campus.Core.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sport Agenda.
+        /// </summary>
+        public static string SportsAgenda {
+            get {
+                return ResourceManager.GetString("SportsAgenda", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The sports agenda has moved. Please click the button below to open the agenda..
+        /// </summary>
+        public static string SportsText {
+            get {
+                return ResourceManager.GetString("SportsText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Copyright (c) 2009-2016 Krueger Systems, Inc.
         ///
         ///Permission is hereby granted, free of charge, to any person obtaining a copy

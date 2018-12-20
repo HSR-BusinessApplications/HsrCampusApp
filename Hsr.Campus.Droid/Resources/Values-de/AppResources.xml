@@ -100,4 +100,5 @@
   <string name="Warning">Warnung</string>
   <string name="WeekSelect">KW: {0} - SW: {1}</string>
   <string name="WeekSelection">Woche wählen</string>
+  <string name="SportsAgenda">Sport Agenda</string>
 </resources>

@@ -501,4 +501,10 @@ Please try it againg.</value>
   <data name="SettingAppInfoSubTitle" xml:space="preserve">
     <value>Version Info, Licenses</value>
   </data>
+  <data name="SportsAgenda" xml:space="preserve">
+    <value>Sport Agenda</value>
+  </data>
+  <data name="SportsText" xml:space="preserve">
+    <value>The sports agenda has moved. Please click the button below to open the agenda.</value>
+  </data>
 </root>
