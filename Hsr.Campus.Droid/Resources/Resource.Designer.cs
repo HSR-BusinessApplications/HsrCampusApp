@@ -318,14 +318,14 @@ namespace Hsr.Campus.Droid
 			// aapt resource value: 0x7f060016
 			public const int menuWebViewPager = 2131099670;
 			
-			// aapt resource value: 0x7f06001e
-			public const int menu_refresh = 2131099678;
-			
-			// aapt resource value: 0x7f06001c
-			public const int menu_settings = 2131099676;
+			// aapt resource value: 0x7f06001f
+			public const int menu_refresh = 2131099679;
 			
 			// aapt resource value: 0x7f06001d
-			public const int menu_weekNr = 2131099677;
+			public const int menu_settings = 2131099677;
+			
+			// aapt resource value: 0x7f06001e
+			public const int menu_weekNr = 2131099678;
 			
 			// aapt resource value: 0x7f060019
 			public const int message = 2131099673;
@@ -344,6 +344,9 @@ namespace Hsr.Campus.Droid
 			
 			// aapt resource value: 0x7f060013
 			public const int tabViewPagerView = 2131099667;
+			
+			// aapt resource value: 0x7f06001c
+			public const int text = 2131099676;
 			
 			// aapt resource value: 0x7f06000f
 			public const int time = 2131099663;
@@ -553,8 +556,8 @@ namespace Hsr.Campus.Droid
 			// aapt resource value: 0x7f07000c
 			public const int AppVersionTitle = 2131165196;
 			
-			// aapt resource value: 0x7f070064
-			public const int ApplicationName = 2131165284;
+			// aapt resource value: 0x7f070065
+			public const int ApplicationName = 2131165285;
 			
 			// aapt resource value: 0x7f07000a
 			public const int ApplicationTitle = 2131165194;
@@ -769,6 +772,9 @@ namespace Hsr.Campus.Droid
 			// aapt resource value: 0x7f07004d
 			public const int Settings = 2131165261;
 			
+			// aapt resource value: 0x7f070064
+			public const int SportsAgenda = 2131165284;
+			
 			// aapt resource value: 0x7f070053
 			public const int ThirdPartyLibraries = 2131165267;
 			
@@ -820,8 +826,8 @@ namespace Hsr.Campus.Droid
 			// aapt resource value: 0x7f070063
 			public const int WeekSelection = 2131165283;
 			
-			// aapt resource value: 0x7f070065
-			public const int account_type_name = 2131165285;
+			// aapt resource value: 0x7f070066
+			public const int account_type_name = 2131165286;
 			
 			// aapt resource value: 0x7f070000
 			public const int library_name = 2131165184;
