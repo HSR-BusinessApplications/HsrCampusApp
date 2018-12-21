@@ -44,7 +44,7 @@ namespace Hsr.Campus.Droid.Views
 
             this.SetContentView(Resource.Layout.TimetableView);
 
-            var day = this.ViewModel.AllDays.FirstOrDefault(
+            var day = this.ViewModel.AllDays.SingleOrDefault(
                     t => t.Date.HasValue && t.Date.Value.DayOfWeek == DateTime.Now.DayOfWeek);
             if (day != null)
             {
