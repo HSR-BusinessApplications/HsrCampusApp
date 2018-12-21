@@ -502,9 +502,9 @@ Please try it againg.</value>
     <value>Version Info, Licenses</value>
   </data>
   <data name="SportsAgenda" xml:space="preserve">
-    <value>Sport Agenda</value>
+    <value>Sports Agenda</value>
   </data>
   <data name="SportsText" xml:space="preserve">
-    <value>The sports agenda has moved. Please click the button below to open the agenda.</value>
+    <value>The sports agenda has been moved! It is now only available on the HSR website. Please click on the button below to view the agenda.</value>
   </data>
 </root>
