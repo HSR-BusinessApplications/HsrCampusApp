@@ -276,7 +276,7 @@
     <InterfaceDefinition Include="Storyboards\News.storyboard" />
     <InterfaceDefinition Include="Storyboards\Timetable.storyboard" />
     <InterfaceDefinition Include="Storyboards\Map.storyboard" />
-    <InterfaceDefinition Include="Storyboards\Events.storyboard" />
+    <InterfaceDefinition Include="Storyboards\Sports.storyboard" />
     <InterfaceDefinition Include="Storyboards\Badge.storyboard" />
     <InterfaceDefinition Include="Storyboards\Filer.storyboard" />
     <InterfaceDefinition Include="Storyboards\Settings.storyboard" />
