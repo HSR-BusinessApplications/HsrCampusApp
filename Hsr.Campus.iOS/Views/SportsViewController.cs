@@ -16,8 +16,6 @@ namespace Hsr.Campus.iOS
     [MvxChildPresentation]
     internal partial class SportsViewController : MvxViewController<SportsViewModel>
     {
-        private int tabCount = 0;
-
         public SportsViewController(IntPtr handle)
             : base(handle)
         {
