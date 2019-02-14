@@ -99,4 +99,5 @@
   <string name="Warning">Warning</string>
   <string name="WeekSelect">Cal-Week: {0} - Term-Week: {1}</string>
   <string name="WeekSelection">Select Week</string>
+  <string name="SportsAgenda">Sports Agenda</string>
 </resources>

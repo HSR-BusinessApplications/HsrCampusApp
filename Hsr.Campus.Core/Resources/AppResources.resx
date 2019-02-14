@@ -501,4 +501,10 @@ Please try it againg.</value>
   <data name="SettingAppInfoSubTitle" xml:space="preserve">
     <value>Version Info, Licenses</value>
   </data>
+  <data name="SportsAgenda" xml:space="preserve">
+    <value>Sports Agenda</value>
+  </data>
+  <data name="SportsText" xml:space="preserve">
+    <value>The Sports Agenda is only available on the HSR website. Please click on the button below to view the agenda.</value>
+  </data>
 </root>

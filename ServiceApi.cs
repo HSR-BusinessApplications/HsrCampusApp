@@ -5,8 +5,6 @@ namespace Hsr.Campus.Core.ApplicationServices
 {
     public class ServiceApi : IServiceApi
     {
-		public string CalendarEvent => "dummyCalenderKey";
-
         public string News => "dummyNewsKey";
 
         public string Map => "dummyMapKey";
@@ -25,8 +23,6 @@ namespace Hsr.Campus.Core.ApplicationServices
 
         public string ExamUri => "https://example.com";
 
-        public string CalendarUri => "https://example.com";
-
         public string FilerApiUriBase => "https://example.com";
 
         public string BuildingsUri => "https://example.com";
@@ -38,6 +34,8 @@ namespace Hsr.Campus.Core.ApplicationServices
         public string MenuUri => "https://example.com";
 
         public string NewsFeedsUri => "https://example.com";
+
+        public string SportsUri => "https://example.com";
 
         public string IconUri => "https://example.com";
 

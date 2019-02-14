@@ -1018,6 +1018,24 @@ namespace Hsr.Campus.Core.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sports Agenda.
+        /// </summary>
+        public static string SportsAgenda {
+            get {
+                return ResourceManager.GetString("SportsAgenda", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The Sports Agenda is only available on the HSR website. Please click on the button below to view the agenda..
+        /// </summary>
+        public static string SportsText {
+            get {
+                return ResourceManager.GetString("SportsText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Copyright (c) 2009-2016 Krueger Systems, Inc.
         ///
         ///Permission is hereby granted, free of charge, to any person obtaining a copy

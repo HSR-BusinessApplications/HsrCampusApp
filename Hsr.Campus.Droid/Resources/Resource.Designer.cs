@@ -318,14 +318,14 @@ namespace Hsr.Campus.Droid
 			// aapt resource value: 0x7f060016
 			public const int menuWebViewPager = 2131099670;
 			
-			// aapt resource value: 0x7f06001e
-			public const int menu_refresh = 2131099678;
-			
-			// aapt resource value: 0x7f06001c
-			public const int menu_settings = 2131099676;
+			// aapt resource value: 0x7f06001f
+			public const int menu_refresh = 2131099679;
 			
 			// aapt resource value: 0x7f06001d
-			public const int menu_weekNr = 2131099677;
+			public const int menu_settings = 2131099677;
+			
+			// aapt resource value: 0x7f06001e
+			public const int menu_weekNr = 2131099678;
 			
 			// aapt resource value: 0x7f060019
 			public const int message = 2131099673;
@@ -344,6 +344,9 @@ namespace Hsr.Campus.Droid
 			
 			// aapt resource value: 0x7f060013
 			public const int tabViewPagerView = 2131099667;
+			
+			// aapt resource value: 0x7f06001c
+			public const int text = 2131099676;
 			
 			// aapt resource value: 0x7f06000f
 			public const int time = 2131099663;
@@ -392,76 +395,70 @@ namespace Hsr.Campus.Droid
 			public const int AdunisViewItem = 2130968582;
 			
 			// aapt resource value: 0x7f040007
-			public const int CalendarFeedView = 2130968583;
+			public const int ExamAppointment = 2130968583;
 			
 			// aapt resource value: 0x7f040008
-			public const int CalendarFeedViewItem = 2130968584;
+			public const int ExamView = 2130968584;
 			
 			// aapt resource value: 0x7f040009
-			public const int ExamAppointment = 2130968585;
+			public const int ExamViewItem = 2130968585;
 			
 			// aapt resource value: 0x7f04000a
-			public const int ExamView = 2130968586;
+			public const int FilerView = 2130968586;
 			
 			// aapt resource value: 0x7f04000b
-			public const int ExamViewItem = 2130968587;
+			public const int FilerViewItem = 2130968587;
 			
 			// aapt resource value: 0x7f04000c
-			public const int FilerView = 2130968588;
+			public const int HomeView = 2130968588;
 			
 			// aapt resource value: 0x7f04000d
-			public const int FilerViewItem = 2130968589;
+			public const int MapView = 2130968589;
 			
 			// aapt resource value: 0x7f04000e
-			public const int HomeView = 2130968590;
+			public const int MapViewHome = 2130968590;
 			
 			// aapt resource value: 0x7f04000f
-			public const int MapView = 2130968591;
+			public const int MapViewItem = 2130968591;
 			
 			// aapt resource value: 0x7f040010
-			public const int MapViewHome = 2130968592;
+			public const int MenuFeedView = 2130968592;
 			
 			// aapt resource value: 0x7f040011
-			public const int MapViewItem = 2130968593;
+			public const int MenuView = 2130968593;
 			
 			// aapt resource value: 0x7f040012
-			public const int MenuFeedView = 2130968594;
+			public const int MenuWebView = 2130968594;
 			
 			// aapt resource value: 0x7f040013
-			public const int MenuView = 2130968595;
+			public const int NewsFeedView = 2130968595;
 			
 			// aapt resource value: 0x7f040014
-			public const int MenuWebView = 2130968596;
+			public const int NewsFeedViewItem = 2130968596;
 			
 			// aapt resource value: 0x7f040015
-			public const int NewsFeedView = 2130968597;
+			public const int NewsView = 2130968597;
 			
 			// aapt resource value: 0x7f040016
-			public const int NewsFeedViewItem = 2130968598;
+			public const int SettingsView = 2130968598;
 			
 			// aapt resource value: 0x7f040017
-			public const int NewsView = 2130968599;
+			public const int SettingsViewItem = 2130968599;
 			
 			// aapt resource value: 0x7f040018
-			public const int SettingsView = 2130968600;
+			public const int SplashScreen = 2130968600;
 			
 			// aapt resource value: 0x7f040019
-			public const int SettingsViewItem = 2130968601;
+			public const int SportsView = 2130968601;
 			
 			// aapt resource value: 0x7f04001a
-			public const int SplashScreen = 2130968602;
+			public const int TimetableAppointment = 2130968602;
 			
 			// aapt resource value: 0x7f04001b
-			public const int SportsView = 2130968603;
+			public const int TimetableView = 2130968603;
 			
 			// aapt resource value: 0x7f04001c
-			public const int TimetableAppointment = 2130968604;
-			
-			// aapt resource value: 0x7f04001d
-			public const int TimetableView = 2130968605;
-			
-			// aapt resource value: 0x7f04001e
-			public const int TimetableViewItem = 2130968606;
+			public const int TimetableViewItem = 2130968604;
 			
 			static Layout()
 			{
@@ -553,8 +550,8 @@ namespace Hsr.Campus.Droid
 			// aapt resource value: 0x7f07000c
 			public const int AppVersionTitle = 2131165196;
 			
-			// aapt resource value: 0x7f070064
-			public const int ApplicationName = 2131165284;
+			// aapt resource value: 0x7f070065
+			public const int ApplicationName = 2131165285;
 			
 			// aapt resource value: 0x7f07000a
 			public const int ApplicationTitle = 2131165194;
@@ -769,6 +766,9 @@ namespace Hsr.Campus.Droid
 			// aapt resource value: 0x7f07004d
 			public const int Settings = 2131165261;
 			
+			// aapt resource value: 0x7f070064
+			public const int SportsAgenda = 2131165284;
+			
 			// aapt resource value: 0x7f070053
 			public const int ThirdPartyLibraries = 2131165267;
 			
@@ -820,8 +820,8 @@ namespace Hsr.Campus.Droid
 			// aapt resource value: 0x7f070063
 			public const int WeekSelection = 2131165283;
 			
-			// aapt resource value: 0x7f070065
-			public const int account_type_name = 2131165285;
+			// aapt resource value: 0x7f070066
+			public const int account_type_name = 2131165286;
 			
 			// aapt resource value: 0x7f070000
 			public const int library_name = 2131165184;

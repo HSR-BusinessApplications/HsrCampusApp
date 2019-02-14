@@ -353,12 +353,6 @@
     <AndroidResource Include="Resources\layout\SportsView.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\CalendarFeedViewItem.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\CalendarFeedView.axml">
-      <SubType>AndroidResource</SubType>
-    </AndroidResource>
     <AndroidResource Include="Resources\layout\MapViewItem.axml">
       <SubType>Designer</SubType>
     </AndroidResource>

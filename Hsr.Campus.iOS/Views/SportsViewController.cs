@@ -12,12 +12,10 @@ namespace Hsr.Campus.iOS
     using MvvmCross.iOS.Views.Presenters.Attributes;
     using UIKit;
 
-    [MvxFromStoryboard("Events")]
+    [MvxFromStoryboard("Sports")]
     [MvxChildPresentation]
-    internal partial class SportsViewController : MvxTabBarViewController<SportsViewModel>
+    internal partial class SportsViewController : MvxViewController<SportsViewModel>
     {
-        private int tabCount = 0;
-
         public SportsViewController(IntPtr handle)
             : base(handle)
         {
@@ -32,37 +30,13 @@ namespace Hsr.Campus.iOS
                 return;
             }
 
-            var viewControllers = this.ViewModel.Items.Select(this.CreateTabFor);
+            this.LabelText.Text = AppResources.SportsText;
 
-            this.ViewControllers = viewControllers.ToArray();
-            this.CustomizableViewControllers = new UIViewController[] { };
-
-            if (this.ViewControllers != null && this.ViewControllers.Any())
-            {
-                this.SelectedViewController = this.ViewControllers[0];
-            }
+            this.ButtonSportsAgenda.SetTitle(AppResources.SportsAgenda, UIControlState.Normal);
+            this.ButtonSportsAgenda.BackgroundColor = Constants.HsrBlue;
+            this.ButtonSportsAgenda.TouchUpInside += this.ViewModel.GoSportsCommand.ToEventHandler();
 
             this.NavigationItem.Title = AppResources.TileSport;
-
-            this.SetRightBarItem(this.ViewModel.UpdateCommand);
-        }
-
-        private UIViewController CreateTabFor(CalendarViewModel viewModel)
-        {
-            var controller = new UINavigationController();
-            var screen = this.CreateViewControllerFor(viewModel) as UIViewController;
-
-            if (screen == null)
-            {
-                return controller;
-            }
-
-            screen.NavigationItem.Title = viewModel.Title;
-            controller.TabBarItem = new UITabBarItem(viewModel.Title, UIImage.FromBundle("TabAgenda"), this.tabCount++);
-
-            controller.PushViewController(screen, false);
-
-            return controller;
         }
     }
 }

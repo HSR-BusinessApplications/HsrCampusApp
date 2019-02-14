@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="944">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sports View Controller-->
+        <scene sceneID="943">
+            <objects>
+                <viewController storyboardIdentifier="SportsViewController" id="944" customClass="SportsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="945">
+                        <rect key="frame" x="0.0" y="70" width="414" height="666"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1984">
+                                <rect key="frame" x="50" y="193" width="275" height="56"/>
+                                <color key="backgroundColor" red="0.0" green="0.38823529410000002" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="1985"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                <state key="normal" title="Sports Agenda">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="The sports agenda has moved. Please click the button below to open the agenda." lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3469" textAlignment="center">
+                                <rect key="frame" x="50" y="27" width="275" height="146"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="942" firstAttribute="trailing" secondItem="3469" secondAttribute="trailing" constant="50" id="7176"/>
+                            <constraint firstItem="3469" firstAttribute="top" secondItem="942" secondAttribute="top" constant="27" id="7251"/>
+                            <constraint firstItem="3469" firstAttribute="leading" secondItem="942" secondAttribute="leading" constant="50" id="7326"/>
+                            <constraint firstItem="1984" firstAttribute="top" secondItem="3469" secondAttribute="bottom" constant="20" id="7401"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1984" secondAttribute="trailing" constant="34" id="7476"/>
+                            <constraint firstItem="1984" firstAttribute="leading" secondItem="945" secondAttribute="leadingMargin" constant="34" id="7551"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="942"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="ButtonSportsAgenda" destination="1984" id="name-outlet-1984"/>
+                        <outlet property="LabelText" destination="3469" id="name-outlet-3469"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="946" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="362" y="-406"/>
+        </scene>
+    </scenes>
+</document>

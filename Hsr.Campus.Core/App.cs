@@ -26,13 +26,10 @@ namespace Hsr.Campus.Core
             Mvx.RegisterType<INewsRepository, NewsRepository>();
             Mvx.RegisterType<INewsSync, NewsSync>();
 
-            Mvx.RegisterType<ICalendarEventRepository, CalendarEventRepository>();
-            Mvx.RegisterType<ICalendarEventSync, CalendarEventSync>();
 #if TEST_DATA
             Mvx.RegisterType<IMenuWebHandler, TestData.DummyMenuWebHandler>();
             Mvx.RegisterType<IAccountBalanceWebHandler, TestData.DummyAccountBalanceWebHandler>();
             Mvx.RegisterType<IAdunisWebHandler, TestData.DummyAdunisWebHandler>();
-            Mvx.RegisterType<ICalendarEventWebHandler, TestData.DummyCalendarEventWebHandler>();
             Mvx.RegisterType<IMapWebHandler, TestData.DummyMapWebHandler>();
             Mvx.RegisterType<INewsWebHandler, TestData.DummyNewsWebHandler>();
             Mvx.RegisterType<IFilerWebHandler, TestData.DummyFilerWebHandler>();
@@ -42,7 +39,6 @@ namespace Hsr.Campus.Core
             Mvx.RegisterType<IMenuWebHandler, MenuWebHandler>();
             Mvx.RegisterType<IAccountBalanceWebHandler, AccountBalanceWebHandler>();
             Mvx.RegisterType<IAdunisWebHandler, AdunisWebHandler>();
-            Mvx.RegisterType<ICalendarEventWebHandler, CalendarEventWebHandler>();
             Mvx.RegisterType<IMapWebHandler, MapWebHandler>();
             Mvx.RegisterType<INewsWebHandler, NewsWebHandler>();
             Mvx.RegisterType<IFilerWebHandler, FilerWebHandler>();

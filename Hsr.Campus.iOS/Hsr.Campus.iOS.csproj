@@ -12,7 +12,7 @@
     <RestorePackages>true</RestorePackages>
     <TargetFrameworkIdentifier>Xamarin.iOS</TargetFrameworkIdentifier>
     <AssemblyName>HsrCampusiOS</AssemblyName>
-    <ReleaseVersion>2.9.2017.0807</ReleaseVersion>
+    <ReleaseVersion>3.1.2018.0214</ReleaseVersion>
     <SynchReleaseVersion>false</SynchReleaseVersion>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -40,7 +40,6 @@
     <CodeAnalysisRuleSet>..\CodeAnalysis_itba_v2.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
-    <DebugType>full</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
@@ -51,6 +50,8 @@
     <NoWarn>1591</NoWarn>
     <DocumentationFile>bin\iPhoneSimulator\Release\HsrCampusiOS.XML</DocumentationFile>
     <CodeAnalysisRuleSet>..\CodeAnalysis_itba_v2.ruleset</CodeAnalysisRuleSet>
+<CodesignKey>iPhone Developer</CodesignKey>
+<MtouchArch>i386, x86_64</MtouchArch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -275,7 +276,7 @@
     <InterfaceDefinition Include="Storyboards\News.storyboard" />
     <InterfaceDefinition Include="Storyboards\Timetable.storyboard" />
     <InterfaceDefinition Include="Storyboards\Map.storyboard" />
-    <InterfaceDefinition Include="Storyboards\Events.storyboard" />
+    <InterfaceDefinition Include="Storyboards\Sports.storyboard" />
     <InterfaceDefinition Include="Storyboards\Badge.storyboard" />
     <InterfaceDefinition Include="Storyboards\Filer.storyboard" />
     <InterfaceDefinition Include="Storyboards\Settings.storyboard" />
@@ -325,17 +326,9 @@
       <DependentUpon>MenuViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="Converter\NegateConverter.cs" />
-    <Compile Include="Views\CalendarViewController.cs" />
-    <Compile Include="Views\CalendarViewController.designer.cs">
-      <DependentUpon>CalendarViewController.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\SportsViewController.cs" />
     <Compile Include="Views\SportsViewController.designer.cs">
       <DependentUpon>SportsViewController.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Cells\CalendarEventCell.cs" />
-    <Compile Include="Cells\CalendarEventCell.designer.cs">
-      <DependentUpon>CalendarEventCell.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\AccountViewController.cs" />
     <Compile Include="Views\AccountViewController.designer.cs">

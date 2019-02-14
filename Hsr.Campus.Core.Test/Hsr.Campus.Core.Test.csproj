@@ -137,7 +137,6 @@
     <Compile Include="ViewModel\NewsFeedViewModelTest.cs" />
     <Compile Include="ViewModel\AccountBalanceViewModelTest.cs" />
     <Compile Include="ViewModel\MenuViewModelTest.cs" />
-    <Compile Include="ViewModel\CalendarViewModelTest.cs" />
     <Compile Include="ViewModel\FilerViewModelTest.cs" />
     <Compile Include="ViewModel\MapViewModelTest.cs" />
     <Compile Include="ViewModel\AdunisViewModelTest.cs" />
