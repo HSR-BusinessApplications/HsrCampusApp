@@ -12,7 +12,7 @@
     <RestorePackages>true</RestorePackages>
     <TargetFrameworkIdentifier>Xamarin.iOS</TargetFrameworkIdentifier>
     <AssemblyName>HsrCampusiOS</AssemblyName>
-    <ReleaseVersion>2.9.2017.0807</ReleaseVersion>
+    <ReleaseVersion>3.1.2018.0214</ReleaseVersion>
     <SynchReleaseVersion>false</SynchReleaseVersion>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
