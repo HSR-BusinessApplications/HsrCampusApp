@@ -459,6 +459,6 @@ Bitte versuchen Sie es nocheinmal.</value>
     <value>Sport Agenda</value>
   </data>
   <data name="SportsText" xml:space="preserve">
-    <value>Die Sport Agenda wurde verschoben! Sie ist neu nur noch auf der HSR Webseite verfügbar. Bitte klicken Sie auf den Button unten um die Agenda einzusehen.</value>
+    <value>Die Sport Agenda ist nur auf der HSR Webseite verfügbar. Bitte klicken Sie auf den Button unten um die Agenda einzusehen.</value>
   </data>
 </root>

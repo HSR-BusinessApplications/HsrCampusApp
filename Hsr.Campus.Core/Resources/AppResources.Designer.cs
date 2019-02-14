@@ -1027,7 +1027,7 @@ namespace Hsr.Campus.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The sports agenda has been moved! It is now only available on the HSR website. Please click on the button below to view the agenda..
+        ///   Looks up a localized string similar to The Sports Agenda is only available on the HSR website. Please click on the button below to view the agenda..
         /// </summary>
         public static string SportsText {
             get {

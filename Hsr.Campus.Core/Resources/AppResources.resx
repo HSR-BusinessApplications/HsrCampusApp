@@ -505,6 +505,6 @@ Please try it againg.</value>
     <value>Sports Agenda</value>
   </data>
   <data name="SportsText" xml:space="preserve">
-    <value>The sports agenda has been moved! It is now only available on the HSR website. Please click on the button below to view the agenda.</value>
+    <value>The Sports Agenda is only available on the HSR website. Please click on the button below to view the agenda.</value>
   </data>
 </root>
