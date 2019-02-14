@@ -12,7 +12,7 @@ namespace Hsr.Campus.iOS
     using MvvmCross.iOS.Views.Presenters.Attributes;
     using UIKit;
 
-    [MvxFromStoryboard("Events")]
+    [MvxFromStoryboard("Sports")]
     [MvxChildPresentation]
     internal partial class SportsViewController : MvxViewController<SportsViewModel>
     {
