@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="ch.hsr.apps.campus" android:versionName="3.2.2019.0528" android:installLocation="auto" android:versionCode="44">
-	<uses-sdk android:minSdkVersion="23" android:targetSdkVersion="26" />
+	<uses-sdk android:minSdkVersion="23" android:targetSdkVersion="28" />
 	<application android:label="HSR Campus" android:icon="@mipmap/ic_launcher" android:roundIcon="@mipmap/ic_launcher_round">
 		<provider android:name="android.support.v4.content.FileProvider" android:authorities="ch.hsr.apps.campus.file.provider" android:exported="false" android:grantUriPermissions="true">
 			<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths" />
@@ -17,4 +17,6 @@
 	<uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
 	<uses-permission android:name="android.permission.USE_CREDENTIALS" />
 	<uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+	<uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 </manifest>
