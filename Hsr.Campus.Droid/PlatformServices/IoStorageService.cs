@@ -87,9 +87,9 @@ namespace Hsr.Campus.Droid.PlatformServices
 
             var uri = Android.Net.Uri.Parse(io.Url);
 
-            var enocedUri = io.Url.Replace(uri.Path, Android.Net.Uri.Encode(uri.Path).Replace("%2F", "/"));
+            var encodedUri = io.Url.Replace(uri.Path, Android.Net.Uri.Encode(uri.Path).Replace("%2F", "/"));
 
-            var req = new DownloadManager.Request(Android.Net.Uri.Parse(enocedUri));
+            var req = new DownloadManager.Request(Android.Net.Uri.Parse(encodedUri));
 
             var path = this.Map(io.FullPath);
 
