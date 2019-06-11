@@ -877,7 +877,10 @@ namespace Hsr.Campus.Droid
 			public const int authenticator = 2131034112;
 			
 			// aapt resource value: 0x7f050001
-			public const int provider_paths = 2131034113;
+			public const int network_security_config = 2131034113;
+			
+			// aapt resource value: 0x7f050002
+			public const int provider_paths = 2131034114;
 			
 			static Xml()
 			{
