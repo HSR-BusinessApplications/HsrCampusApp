@@ -52,6 +52,7 @@
     <EnableLLVM>false</EnableLLVM>
     <AndroidSupportedAbis>
     </AndroidSupportedAbis>
+    <MandroidI18n />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
