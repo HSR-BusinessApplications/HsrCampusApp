@@ -25,7 +25,7 @@
                     android:text="07:05\n07:50"
                     local:MvxBind="Visibility Visibility(Date)"
                     android:layout_marginRight="10dp" />
-                <Mvx.MvxListView
+                <Mvx.MvxTableLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:dividerHeight="1dp"
@@ -48,7 +48,7 @@
                     android:text="08:10\n08:55"
                     local:MvxBind="Visibility Visibility(Date)"
                     android:layout_marginRight="10dp" />
-                <Mvx.MvxListView
+                <Mvx.MvxTableLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:dividerHeight="1dp"
@@ -71,7 +71,7 @@
                     android:text="09:05\n09:50"
                     local:MvxBind="Visibility Visibility(Date)"
                     android:layout_marginRight="10dp" />
-                <Mvx.MvxListView
+                <Mvx.MvxTableLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:dividerHeight="1dp"
@@ -94,7 +94,7 @@
                     android:text="10:10\n10:55"
                     local:MvxBind="Visibility Visibility(Date)"
                     android:layout_marginRight="10dp" />
-                <Mvx.MvxListView
+                <Mvx.MvxTableLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:dividerHeight="1dp"
@@ -117,7 +117,7 @@
                     android:text="11:05\n11:50"
                     local:MvxBind="Visibility Visibility(Date)"
                     android:layout_marginRight="10dp" />
-                <Mvx.MvxListView
+                <Mvx.MvxTableLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:dividerHeight="1dp"
@@ -140,7 +140,7 @@
                     android:text="12:10\n12:55"
                     local:MvxBind="Visibility Visibility(Date)"
                     android:layout_marginRight="10dp" />
-                <Mvx.MvxListView
+                <Mvx.MvxTableLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:dividerHeight="1dp"
@@ -163,7 +163,7 @@
                     android:text="13:10\n13:55"
                     local:MvxBind="Visibility Visibility(Date)"
                     android:layout_marginRight="10dp" />
-                <Mvx.MvxListView
+                <Mvx.MvxTableLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:dividerHeight="1dp"
@@ -186,7 +186,7 @@
                     android:text="14:05\n14:50"
                     local:MvxBind="Visibility Visibility(Date)"
                     android:layout_marginRight="10dp" />
-                <Mvx.MvxListView
+                <Mvx.MvxTableLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:dividerHeight="1dp"
@@ -209,7 +209,7 @@
                     android:text="15:10\n15:55"
                     local:MvxBind="Visibility Visibility(Date)"
                     android:layout_marginRight="10dp" />
-                <Mvx.MvxListView
+                <Mvx.MvxTableLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:dividerHeight="1dp"
@@ -232,7 +232,7 @@
                     android:text="16:05\n16:50"
                     local:MvxBind="Visibility Visibility(Date)"
                     android:layout_marginRight="10dp" />
-                <Mvx.MvxListView
+                <Mvx.MvxTableLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:dividerHeight="1dp"
@@ -255,7 +255,7 @@
                     android:text="17:00\n17:45"
                     local:MvxBind="Visibility Visibility(Date)"
                     android:layout_marginRight="10dp" />
-                <Mvx.MvxListView
+                <Mvx.MvxTableLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:dividerHeight="1dp"
@@ -278,7 +278,7 @@
                     android:text="17:55\n18:40"
                     local:MvxBind="Visibility Visibility(Date)"
                     android:layout_marginRight="10dp" />
-                <Mvx.MvxListView
+                <Mvx.MvxTableLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:dividerHeight="1dp"
@@ -301,7 +301,7 @@
                     android:text="19:10\n19:55"
                     local:MvxBind="Visibility Visibility(Date)"
                     android:layout_marginRight="10dp" />
-                <Mvx.MvxListView
+                <Mvx.MvxTableLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:dividerHeight="1dp"
@@ -324,7 +324,7 @@
                     android:text="20:05\n20:50"
                     local:MvxBind="Visibility Visibility(Date)"
                     android:layout_marginRight="10dp" />
-                <Mvx.MvxListView
+                <Mvx.MvxTableLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:dividerHeight="1dp"

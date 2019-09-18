@@ -33,10 +33,10 @@ If you want to develop on the Debug- and Release Configuration please contact th
 
 ## Tools
 
-* Visual Studio 2017 (15.5)
+* Visual Studio 2019
   * Mobile development with .net (workload)
 * Android SDK Manager
-  * "Android 8.0 (API 26) > SDK Platform" for "Compile using Android version"
+  * "Android 9.0 (API 28) > SDK Platform" for "Compile using Android version"
   * "Android 6.0 (API 23) > SDK Platform" for "minimum Android to target"
 
 ## Configurations
@@ -63,8 +63,7 @@ AllSimulators   | for deployment on Android Emulator or iPhone Simulator
 
 ## Android AVD Emulator
 
-To use hardware acceleration (Intel HAXM) for the AVD Emulator Hyper-V must be disabled.
-
-
+Googles Android Emulator now also supports Hyper-V on Windows
+https://docs.microsoft.com/en-us/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?pivots=windows
 
 

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
@@ -7,14 +7,14 @@
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Company>Hochschule für Technik Rapperswil</Company>
     <Authors />
-    <AssemblyVersion>3.2.0.0</AssemblyVersion>
-    <FileVersion>3.1.2019.0214</FileVersion>
+    <AssemblyVersion>3.3.0.0</AssemblyVersion>
+    <FileVersion>3.3.2019.0917</FileVersion>
     <NeutralLanguage>en</NeutralLanguage>
     <Copyright>Copyright © HSR 2019</Copyright>
     <PackageProjectUrl>https://campusapp.hsr.ch/index.php?id=16748</PackageProjectUrl>
     <PackageLicenseUrl>https://campusapp.hsr.ch/index.php?id=16746</PackageLicenseUrl>
     <Description />
-    <Version>3.2.2019.0528-Release</Version>
+    <Version>3.3.2019.0917-Release</Version>
     <ApplicationIcon />
     <Win32Resource />
     <CodeAnalysisRuleSet>..\CodeAnalysis_itba_v2.ruleset</CodeAnalysisRuleSet>
