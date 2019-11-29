@@ -1,12 +1,7 @@
 ﻿# HSR Campus App
 
-## Contribution
-If you want to contribute to the project, please first read the [Contribution-Guideline](Contribution-Guideline.md) and the [Code-Guideline](Code-Guideline.md).
-
-There are two different approaches to use the project:
-
-1. You do not have the API keys file
-2. You do have the API keys file
+## End of life
+This project reached end of life and will no longer be supported. All backend services for this app have been deactivated.
 
 ### Without API Key File(s)
 1. Download the Git Repository
